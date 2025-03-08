@@ -53,6 +53,7 @@ hr = \markup {
 \book {
   \header {
     title = "BAL"
+    subtitle = "v0.1"
   }
   
   \score {
@@ -202,7 +203,7 @@ hr = \markup {
       opus = \markup \fontsize #2 "Jig | R | ._'·_'"
     }
     \new ChordGrid \chordmode {
-      \repeat volta 2 { \textMark "^ré" g1 g \alternative { \volta 1,3 { d:7 d:7 } \volta 2,4 { \textMark "^ré fa# la do" d:7 g } } }
+      \repeat volta 2 { \textMark "^ré" g1 g \alternative { \volta 1,3 { a:m a:m } \volta 2,4 { \textMark "^ré fa# la do" d:7 g } } }
       \repeat volta 2 { \textMark "^sol" g1 g \textMark "^fa#" d d \textMark ":':'" c2 g \textMark ":':'" c g \textMark "^fa# la do" d1:7 g }
     }
   }
@@ -302,13 +303,9 @@ hr = \markup {
       title = "CUI"
     }
     \new ChordGrid \chordmode {
-      %\tweak text "A A B A" \startMeasureSpanner
-      %\repeat volta 2 { \textMark "A" g1 d g d g2 c g d g c g e:m }
-      %\repeat volta 2 { \textMark "B" g1 \alternative { \volta 1,3,4 { d } \volta 2 { c } } }
-      %\stopMeasureSpanner
-      \repeat volta 2 { \textMark "A" g1 d g d g2 c g d g c g e:m }
-      \break
-      \repeat volta 1 { \textMark "B" g1 d g c g d g d \textEndMark "+ finir par A" }
+      \repeat volta 2 { g1 d g d g2 c g d g c g1 }
+      \repeat volta 1 { g1 d e2:m d g c g1 c2 g g1 d }
+      \repeat volta 1 { g1 d g d g2 c g d g c g1 } % = first mvt
     }
   }
   
@@ -344,13 +341,13 @@ hr = \markup {
       opus = \markup \fontsize #2 "Jig | R | :_':_'"
     }
     \new ChordGrid \chordmode {
-      \repeat volta 3 { s1 \tweak text "A x3" \startMeasureSpanner g \textMark "^fa# la do" d:7 g2 d g d g1 d c2 d g1 \stopMeasureSpanner }
+      \repeat volta 2 { s1 \tweak text "1. 3x, 3. 4,5x (lignes 1 et 2)" \startMeasureSpanner g \textMark "^fa# la do" d:7 g2 d g d g1 d c2 d g1 \stopMeasureSpanner }
       \break
-      \repeat volta 3 { \tweak text "B x3" \startMeasureSpanner g1 c2 g a:m g d1 g c2 g a1:m d \stopMeasureSpanner }
+      \repeat volta 2 { g1 c2 g a:m g d1 g c2 g a1:m d }
       \break
-      \repeat volta 2 { \tweak text "C x2" \startMeasureSpanner a1 e:7 a2 e a e a1 e a2 e a1 \stopMeasureSpanner }
+      \repeat volta 2 { \tweak text "2. 3x, (lignes 3 et 4)" \startMeasureSpanner a1 e:7 a2 e a e a1 e a2 e a1 \stopMeasureSpanner }
       \break
-      \repeat volta 3 { \tweak text "D x3" \startMeasureSpanner a1 d2 a b:m a e1 a d2 a b1:m a \stopMeasureSpanner }
+      \repeat volta 2 { a1 d2 a b:m a e1 a d2 a b1:m a }
     }
   }
   
@@ -362,7 +359,7 @@ hr = \markup {
       opus = \markup \fontsize #2 "Jig | R | ._'·_' ou :_':_'"
     }
     \new ChordGrid \chordmode {
-      \repeat volta 8 { \tweak text "(A + B) * 8, ^ré * 2 + ^fa * 2" \startMeasureSpanner d1 g d a d1 g a d \stopMeasureSpanner }
+      \repeat volta 4 { \tweak text "x4" \startMeasureSpanner d1 g d a d1 g a d \stopMeasureSpanner }
     }
   }
   \score {
@@ -371,9 +368,9 @@ hr = \markup {
       opus = \markup \fontsize #2 "Polka | RR | .'·'"
     }
     \new ChordGrid \chordmode {
-      \repeat volta 2 { s1 \bar ".|:" \textMark "A" g1 d c d \textMark "A'" g1 d g2 d g1 }
+      \repeat volta 2 { s1 \bar ".|:" g1 d c d g1 d g2 d g1 }
       \break
-      \repeat volta 1 { \textMark "B" g1 g c g c g a:m d g \textEndMark "+ finir par A'" }
+      \repeat volta 1 { g1 g c g c g a:m d g g1 d g2 d g1 }
     }
   }
   \score {
