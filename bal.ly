@@ -2,6 +2,10 @@
 
 #(set-global-staff-size 14)
 
+% Annotations:
+% \textMark ""
+% \tweak text "" \startMeasureSpanner ... \stopMeasureSpanner
+
 hr = \markup {
   \override #'(thickness . 1)
   \column {
@@ -51,336 +55,92 @@ hr = \markup {
 }
 
 \book {
+  \paper {
+    scoreTitleMarkup = \markup {
+      \fill-line {
+        \fontsize #2 \bold \fromproperty #'header:piece
+        \null
+        \fontsize #2 \fromproperty #'header:opus
+      }
+    } 
+  }
   \header {
     title = "BAL"
-    subtitle = "v0.1"
+    subtitle = "v0.2"
   }
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The Swallowtail"
-      opus = \markup \fontsize #2 "Jig | R | .'·'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 4 { s1 \bar ".|:" \textMark "^mi" e:m e:m d \alternative { \volta 1,3 { d } \volta 2,4 { e:m } } }
-      \repeat volta 4 { \textMark "^sol" e1:m e:m \alternative { \volta 1,3 { e:m e2.:m d4 } \volta 2,4 { d1 e:m } } }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The Black Rogue"
-      opus = \markup \fontsize #2 "Jig | R | :':'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { \textMark "^mi" a2 g a1 a2 g d1 a2 g a1 g d }
-      %\repeat volta 2 { \tweak text "x2" \startMeasureSpanner d2 c d1 \stopMeasureSpanner d2 c d a a g d1 }
-      \break
-      \repeat volta 2 { d2 c d1 d2 c d1 d2 c d a a g d1 }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The Ships In Full Sail"
-      opus = \markup \fontsize #2 "Jig | R | :':'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { \textMark "^sol" g1 g c2 g d1 g g c2 g d g }
-      \break
-      \repeat volta 2 { \textMark "^si .''" g1 c g d g c e:m d2 g }
-      \break
-      \repeat volta 2 { g1 c g d g c c2 g d g }
-    }
-  }
+  \include "the-swallowtail.ily"
+  \include "the-black-rogue.ily"
+  \include "the-ship-in-full-sail.ily"
+
+  \hr
+
+  \include "mussels-in-the-corner.ily"
+  \include "she-said-she-couldnt-dance.ily"
+  \include "paddys-jig.ily"
+
+  \hr
+
+  \include "the-belfast.ily"
+
+  \hr
+  
+  \include "tripping-up-the-stairs.ily"
+  \include "scatter-the-mud.ily"
+  \include "fasten-the-leg-in-her-jig.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The Belfast (Boys of Bluehill)"
-      opus = \markup \fontsize #2 "Hornpipe | RR | ._'·_'"
-    }
-    \new ChordGrid
-    \chordmode {
-      \repeat volta 2 { s1 d1 d a e2:m a d1 d g2 a d2 a4 d }
-      \break
-      \repeat volta 2 { s1 g1 d d a g d d2 a d2 a4 d }
-      \break
-      \repeat volta 2 { s1 d1 d g2 d e:m a d1 d g2 a d2 a4 d }
-    }
-  }
+  \include "maggie-in-the-woods.ily"
+  \include "denis-murphys.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Tripping up The Stairs"
-      opus = \markup \fontsize #2 "Jig | R | :':'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { \tweak text "x4" \startMeasureSpanner d2 g d1 a d \stopMeasureSpanner }
-      \repeat volta 2 { b:m b:m a a b:m b:m a d }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Scatter The Mud"
-      opus = \markup \fontsize #2 "Jig | R | :':'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { \textMark "^la" a2:m g a:m e:m a1:m g a:m a:m e:m g2 a:m }
-      \break
-      \repeat volta 2 { a2:m g g1 a2:m e:m g1 a2:m g g1 e:m g2 a:m }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Fasten The Leg In Her Jig"
-      opus = \markup \fontsize #2 "Jig | R | :':'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { \textMark "^ré" g1 g d c2 d g1 g e2:m a d1 }
-      \break
-      \repeat volta 4 { g2 d c g \alternative { \volta 1,3 { g d e:m d } \volta 2,4 { c a d1 } } }
-    }
-  }
+  \include "si-beag-si-mor.ily"
+  \include "the-south-wind.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Maggie In The Woods (Estropie)"
-      opus = \markup \fontsize #2 "Polka | R | :':'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 4 { s1 g g2 c \alternative { \volta 1,3 { g1 d } \volta 2,4 { d2 g } } }
-      \repeat volta 4 { s1 e:m c \alternative { \volta 1,3 { g d } \volta 2,4 { g2 d g1 } } }
-      %\repeat volta 2 { s1 g g2 c g1 d g g2 c d g }
-      %\break
-      %\repeat volta 2 { s1 e:m c g d e:m c g2 d g1 }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Denis Murphy's"
-      opus = \markup \fontsize #2 "Polka | R | :':'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 4 { d1 d g \alternative { \volta 1,3 { d } \volta 2,4 { a2 d } } }
-      \repeat volta 4 { d1 g \alternative { \volta 1,3 { d a } \volta 2,4 { a2 g d1 } } }
-    }
-  }
+  \include "the-irish-washerwoman.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Si Beag Si Mor"
-      opus = \markup \fontsize #2 "Valse | R | .''.''"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { s1 \bar ".|:" d b:m g2. a4 d1 g a:7 d b:m g a:7 d b:m g a:7 d d }
-      \repeat volta 2 { d1 a:7 g d a:7 d d a fis b:m g a:7 g a:7 d d }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The South Wind"
-      opus = \markup \fontsize #2 "Valse | R | .''"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { s1 g g d d g c g g }
-      \break
-      \repeat volta 4 { g1 c g g e:m \alternative { \volta 1,3 { e:m d d } \volta 2,4 { d g g } } }
-      %\repeat volta 2 { g1 c g g e:m e:m d d g c g g e:m d g g }
-    }
-  }
+  \include "o-keeffees.ily"
+  \include "the-boys-of-bluehill.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The Irish Washerwoman (Dusty, fin série Kesh)"
-      opus = \markup \fontsize #2 "Jig | R | ._'·_'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { \textMark "^ré" g1 g \alternative { \volta 1,3 { a:m a:m } \volta 2,4 { \textMark "^ré fa# la do" d:7 g } } }
-      \repeat volta 2 { \textMark "^sol" g1 g \textMark "^fa#" d d \textMark ":':'" c2 g \textMark ":':'" c g \textMark "^fa# la do" d1:7 g }
-    }
-  }
+  \include "macleods-farewell.ily"
+  \include "cooleys.ily"
+  \include "the-silver-spear.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "O'Keeffe's (Snowy)"
-      opus = \markup \fontsize #2 "Slide | R | .'·'"
-    }
-    \new ChordGrid \chordmode {
-      %\repeat volta 2 { \tweak text "2x2" \startMeasureSpanner a1 g \stopMeasureSpanner }
-      %\repeat volta 2 { a2 e g1 g g }
-      \repeat volta 2 { a2 g a g a g a g }
-      \repeat volta 2 { a2 e:m g e:m g1 e2:m a }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The Boys Of Bluehill"
-      opus = \markup \fontsize #2 "Hornpipe | R | .'·'"
-    }
-    \new ChordGrid \chordmode {
-      %\repeat volta 2 { s1 b2:m d b:m a d a:7 d b:m b:m d b:m7 e:m d a:7 d1 }
-      %\break
-      %\repeat volta 2 { s1 d1 g d2 a:7 d b:m b:m d b:m7 e:m d a:7 d1 }
-      %\repeat volta 4 { s1 d d2 a d a \alternative { \volta 1,3 { g2 a } \volta 2,4 { d2 g4 d } } }
-      \repeat volta 2 { s1 d d2 a d a g a d1 d2 a d a d2 g4 d }
-      \break
-      \repeat volta 2 { s1 d g d2 a g a d1 d2 a d a d2 g4 d }
-    }
-  }
+  \include "the-galway-belle.ily"
+  \include "the-little-diamond.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "MacLeod's Farewell (Cooley)"
-      opus = \markup \fontsize #2 "Reel | RR | :':'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { s1 \textMark "^fa#" d2 a d1 e:m \textMark "^sol la do#" a:7 d2 a d1 e:m a2:7 d }
-      \break
-      \repeat volta 2 { s1 d1 d d2 b:m e:m a:7 d a d1 e:m a2:7 d }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Cooley's"
-      opus = \markup \fontsize #2 "Reel | R | ._'·_'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { s1 \tweak text "2x2" \startMeasureSpanner \textMark "^mi" e:m e:m d d \stopMeasureSpanner }
-      \repeat volta 2 { \tweak text "2x2" \startMeasureSpanner \textMark "^sol" e1:m e:m d d \stopMeasureSpanner }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The Silver Spear"
-      opus = \markup \fontsize #2 "Reel | R | ._'·_'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { s1 \bar ".|:" \textMark "^sol" d1 \tweak text "x2" \startMeasureSpanner d d g \stopMeasureSpanner g }
-      \repeat volta 2 { \tweak text "x3" \startMeasureSpanner d1 g \stopMeasureSpanner g g }
-    }
-  }
+  \include "acadien.ily"
+  %\include "peggys-jig.ily"
+  \include "andy-dejarlis-jig.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The Galway Belle (Bear Dance)"
-      opus = \markup \fontsize #2 "Polka | RR | .'·'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 8 { \tweak text "A^mi + B^sol" \startMeasureSpanner e1:m e:m d \alternative { \volta 1,3,5,7 { d } \volta 2,4,6,8 { e:m } } \stopMeasureSpanner }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The Little Diamond"
-      opus = \markup \fontsize #2 "Polka | RR | .'·'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 4 { d1 d \alternative { \volta 1,3 { d a } \volta 2,4 { a d } } }
-      \repeat volta 4 { d2 g d1 \alternative { \volta 1,3 { d a } \volta 2,4 { a d } } }
-    }
-  }
+  \include "humours-of-bandon.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Humours of Bandon"
-      opus = \markup \fontsize #2 "Jig | R | ._'·_'"
-      title = "CUI"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { g1 d g d g2 c g d g c g1 }
-      \repeat volta 1 { g1 d e2:m d g c g1 c2 g g1 d }
-      \repeat volta 1 { g1 d g d g2 c g d g c g1 } % = first mvt
-    }
-  }
+  \include "sangshyttevalsen.ily"
+  \include "far-away.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Sangshyttevalsen (Humours Flinn)"
-      opus = \markup \fontsize #2 "Valse | R | :'':''"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { s1 \bar ".|:" \textMark "^fa#" b1:m a \textMark "^fa# la do#" fis:m g b:m a g2 a b1:m }
-      \break
-      \repeat volta 2 { b1:m a g fis:m b:m a g2 a b1:m }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Far Away"
-      opus = \markup \fontsize #2 "Valse | R | :'':''"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { \alternative { \volta 1 { s1 } \volta 2 { b:m } } \tweak text "x2" \startMeasureSpanner b:m fis:m \stopMeasureSpanner g fis:m d2. a4 }
-      \repeat volta 2 { b1:m \tweak text "x2" \startMeasureSpanner d a \stopMeasureSpanner b2:m a g e:m b1:m \alternative { \volta 2 { b:m } } }
-    }
-  }
+  \include "trip-to-the-cottage.ily"
   
   \hr
   
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Trip To The Cottage"
-      opus = \markup \fontsize #2 "Jig | R | :_':_'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { s1 \tweak text "1. 3x, 3. 4,5x (lignes 1 et 2)" \startMeasureSpanner g \textMark "^fa# la do" d:7 g2 d g d g1 d c2 d g1 \stopMeasureSpanner }
-      \break
-      \repeat volta 2 { g1 c2 g a:m g d1 g c2 g a1:m d }
-      \break
-      \repeat volta 2 { \tweak text "2. 3x, (lignes 3 et 4)" \startMeasureSpanner a1 e:7 a2 e a e a1 e a2 e a1 \stopMeasureSpanner }
-      \break
-      \repeat volta 2 { a1 d2 a b:m a e1 a d2 a b1:m a }
-    }
-  }
-  
-  \hr
-  
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Haste To The Wedding"
-      opus = \markup \fontsize #2 "Jig | R | ._'·_' ou :_':_'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 4 { \tweak text "x4" \startMeasureSpanner d1 g d a d1 g a d \stopMeasureSpanner }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "The German Beau"
-      opus = \markup \fontsize #2 "Polka | RR | .'·'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 2 { s1 \bar ".|:" g1 d c d g1 d g2 d g1 }
-      \break
-      \repeat volta 1 { g1 g c g c g a:m d g g1 d g2 d g1 }
-    }
-  }
-  \score {
-    \header {
-      piece = \markup \bold \fontsize #2 "Leslie's"
-      opus = \markup \fontsize #2 "Hornpipe | N | :':'"
-    }
-    \new ChordGrid \chordmode {
-      \repeat volta 4 { g1 d \alternative { \volta 1,3 { c } \volta 2,4 { c2 d } } g1 }
-      \repeat volta 2 { g1 c \textMark "^fa# la do ré" d:7 g e:m d c2 d g1 }
-    }
-  }
+  \include "haste-to-the-wedding.ily"
+  \include "the-german-beau.ily"
+  \include "leslies.ily"
 }
