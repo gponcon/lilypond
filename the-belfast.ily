@@ -3,7 +3,7 @@
 \score {
   \header {
     piece = "The Belfast (Boys of Bluehill)"
-    opus = "Hornpipe | RR | ._'·_'"
+    opus = "Hornpipe | RRR | ._'·_'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { s1 d1 d a e2:m a d1 d g2 a d2 a4 d }

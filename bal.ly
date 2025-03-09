@@ -64,7 +64,7 @@ hr = \markup {
   }
   \header {
     title = "BAL"
-    subtitle = "v0.2.1"
+    subtitle = "v0.2.2"
   }
   
   \include "the-swallowtail.ily"
