@@ -9,9 +9,9 @@
 hr = \markup {
   \override #'(thickness . 1)
   \column {
-    \vspace #1  % Marge avant la ligne
-  \draw-squiggle-line #0.5 #'(6 . 0) ##t
-    \vspace #1  % Marge après la ligne
+    \vspace #1
+    \draw-squiggle-line #0.5 #'(6 . 0) ##t
+    \vspace #1
   }
 }
 
@@ -22,13 +22,11 @@ hr = \markup {
   line-width = 18\cm
   ragged-right = ##f
   print-page-number = #f
-  
   system-system-spacing.basic-distance = #0
   score-markup-spacing = #'((basic-distance . 15)
                             (minimum-distance . 10)
                             (padding . 5)
                             (stretchability . 20))
-  
   oddFooterMarkup = \markup \fill-line {
     ""
     \fromproperty #'page:page-number-string
@@ -113,7 +111,7 @@ hr = \markup {
   
   \hr
   
-  \include "o-keeffees.ily"
+  \include "o-keeffes.ily"
   % TODO: star above
 
   \hr
