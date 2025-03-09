@@ -66,7 +66,7 @@ hr = \markup {
   }
   \header {
     title = "BAL"
-    subtitle = "v0.2"
+    subtitle = "v0.2.1"
   }
   
   \include "the-swallowtail.ily"
@@ -91,6 +91,11 @@ hr = \markup {
   
   \hr
   
+  \include "the-britches.ily"
+  \include "egans-kerry-polka.ily"
+  
+  \hr
+  
   \include "maggie-in-the-woods.ily"
   \include "denis-murphys.ily"
   
@@ -100,19 +105,34 @@ hr = \markup {
   \include "the-south-wind.ily"
   
   \hr
-  
+
+  \include "the-kesh.ily"
+  \include "out-on-the-ocean.ily"
+  \include "morrisons.ily"
   \include "the-irish-washerwoman.ily"
   
   \hr
   
   \include "o-keeffees.ily"
+  % TODO: star above
+
+  \hr
+
+  \include "john-ryans.ily"
+
+  \hr
+
   \include "the-boys-of-bluehill.ily"
-  
+
   \hr
   
   \include "macleods-farewell.ily"
   \include "cooleys.ily"
   \include "the-silver-spear.ily"
+  
+  \hr
+  
+  \include "sweets-of-may.ily"
   
   \hr
   
@@ -125,6 +145,8 @@ hr = \markup {
   %\include "peggys-jig.ily"
   \include "andy-dejarlis-jig.ily"
   
+  % TODO: Merrily
+  
   \hr
   
   \include "humours-of-bandon.ily"
@@ -134,9 +156,13 @@ hr = \markup {
   \include "sangshyttevalsen.ily"
   \include "far-away.ily"
   
+  % TODO: série Road Lisdoon
+  
   \hr
   
   \include "trip-to-the-cottage.ily"
+  
+  % TODO: temperance, st anne, the otter + toss
   
   \hr
   
