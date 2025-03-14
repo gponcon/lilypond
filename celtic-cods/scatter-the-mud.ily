@@ -3,7 +3,7 @@
 \score {
   \header {
     piece = "Scatter The Mud"
-    opus = "Jig | R | :':'"
+    opus = "Jig | R | :_':_'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { \textMark "^la" a2:m g a:m e:m a1:m g a:m a:m e:m g2 a:m }

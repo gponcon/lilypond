@@ -17,7 +17,7 @@ hr = \markup {
 
 \paper {
   indent = 0
-  top-margin = 10
+  top-margin = 15
   bottom-margin = 15
   line-width = 18\cm
   ragged-right = ##f
@@ -29,12 +29,12 @@ hr = \markup {
                             (stretchability . 20))
   oddFooterMarkup = \markup \fill-line {
     ""
-    \fromproperty #'page:page-number-string
+    \vspace #3 \bold \fromproperty #'page:page-number-string \vspace #3
     ""
   }
   evenFooterMarkup = \markup \fill-line {
     ""
-    \fromproperty #'page:page-number-string
+    \vspace #3 \bold \fromproperty #'page:page-number-string \vspace #3
     ""
   }
 }
@@ -64,7 +64,7 @@ hr = \markup {
   }
   \header {
     title = "BAL"
-    subtitle = "v0.2.4"
+    subtitle = "v0.2.5"
   }
   
   \include "the-swallowtail.ily"
