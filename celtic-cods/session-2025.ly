@@ -9,7 +9,7 @@
 hr = \markup {
   \override #'(thickness . 1)
   \column {
-    \vspace #1
+    \vspace #0
     \draw-squiggle-line #0.5 #'(6 . 0) ##t
     \vspace #1
   }
@@ -100,7 +100,7 @@ hr = \markup {
 
   \hr
   
-  % Humours flinn
+  \include "humours-of-flinn.ily"
   \include "far-away.ily"
   \include "sangshyttevalsen.ily"
 
