@@ -106,7 +106,7 @@ hr = \markup {
 
   \hr
   
-  % Killoran's
+  % Killoran's - chords & musique introuvables
   \include "air-mignonne.ily"
   \include "as-i-went-upon-the-ice.ily"
 
@@ -133,8 +133,10 @@ hr = \markup {
 
   \hr
   
-  % Inisheer
-  
+  \include "inisheer.ily"
+
+  \hr
+
   % Road lisdoonvarna
   % Denis murphy slide
   % Brosna
