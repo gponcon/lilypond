@@ -94,7 +94,12 @@ hr = \markup {
   \include "morrisons.ily"
 
   \hr
-  
+
+  \include "trip-to-skye.ily"
+  \include "crested-hens.ily"
+
+  \hr
+
   % Trip skye
   % Crested
   
