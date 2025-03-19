@@ -1,0 +1,12 @@
+\version "2.24.4"
+
+\score {
+  \header {
+    piece = "Au bord de l'eau (à vérifier)"
+    opus = "Mazurka"
+  }
+  \new ChordGrid \chordmode {
+    \repeat volta 2 { s1 \bar ".|:" \tweak text "2x2" \startMeasureSpanner e:m c:7 g d \stopMeasureSpanner }
+    \repeat volta 4 { c1 g d \alternative { \volta 1,3 { b:m } \volta 2,4 { \tweak text "x6" \startMeasureSpanner e:m \stopMeasureSpanner } } }
+  }
+}

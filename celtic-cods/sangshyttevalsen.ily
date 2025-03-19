@@ -2,7 +2,7 @@
 
 \score {
   \header {
-    piece = "Sangshyttevalsen (Humours Flinn)"
+    piece = "Sangshyttevalsen"
     opus = "Valse | R | :'':''"
   }
   \new ChordGrid \chordmode {

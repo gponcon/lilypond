@@ -66,11 +66,13 @@ hr = \markup {
     title = "Session 2025"
     subtitle = "v0.1.0"
   }
-  
-  % Hector
-  % Hole
-  % Seamus
-  
+
+  \include "hector-hero"
+  \include "the-hole-in-the-hedge"
+  \include "seamus-cooleys"
+
+  \hr
+
   % Pride
   % Rights
   
@@ -113,7 +115,9 @@ hr = \markup {
   % Sonny's Mazurka
   % Grass on path
   
-  % Au bord de l'eau
+  \include "au-bord-de-leau"
+
+  \hr
   
   % Estropie
   \include "denis-murphys.ily"

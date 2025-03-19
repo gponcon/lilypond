@@ -2,7 +2,7 @@
 
 \score {
   \header {
-    piece = "O'Keeffe's (Snowy)"
+    piece = "O'Keeffe's"
     opus = "Slide | R | .'·'"
   }
   \new ChordGrid \chordmode {

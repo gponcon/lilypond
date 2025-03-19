@@ -2,7 +2,7 @@
 
 \score {
   \header {
-    piece = "Maggie In The Woods (Estropie)"
+    piece = "Maggie In The Woods"
     opus = "Polka | R | :':'"
   }
   \new ChordGrid \chordmode {
