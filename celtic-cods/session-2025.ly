@@ -110,8 +110,10 @@ hr = \markup {
   \hr
   
   % Killoran's
-  % Air mignonne
-  % As i went
+  \include "air-mignonne.ily"
+  \include "as-i-went-upon-the-ice.ily"
+
+  \hr
   
   % Snowy
   % Calliope
