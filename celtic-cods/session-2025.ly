@@ -118,14 +118,16 @@ hr = \markup {
 
   \hr
   
-  % Sonny's Mazurka
-  % Grass on path
+  \include "sonnys-mazurka.ily"
+  \include "the-grass-on-the-path.ily"
+
+  \hr
   
   \include "au-bord-de-leau"
 
   \hr
-  
-  % Estropie
+
+  \include "estropie.ily"
   \include "denis-murphys.ily"
   \include "maggie-in-the-woods.ily"
 
