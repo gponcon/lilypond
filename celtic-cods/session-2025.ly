@@ -99,9 +99,6 @@ hr = \markup {
   \include "crested-hens.ily"
 
   \hr
-
-  % Trip skye
-  % Crested
   
   % Humours flinn
   \include "far-away.ily"
@@ -115,8 +112,8 @@ hr = \markup {
 
   \hr
   
-  % Snowy
-  % Calliope
+  \include "the-snowy-path.ily"
+  \include "calliope-house.ily"
   \include "o-keeffes.ily"
 
   \hr
