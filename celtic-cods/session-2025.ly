@@ -137,10 +137,12 @@ hr = \markup {
 
   \hr
 
-  % Road lisdoonvarna
-  % Denis murphy slide
-  % Brosna
-  % Going to well water
+  \include "road-lisdoonvarna.ily"
+  \include "denis-murphys-slide.ily"
+  \include "the-brosna.ily"
+  \include "going-well-water.ily"
+
+  \hr
   
   % Eleanor plunkett
   % Inion scannlain
