@@ -67,15 +67,17 @@ hr = \markup {
     subtitle = "v0.1.0"
   }
 
-  \include "hector-hero"
-  \include "the-hole-in-the-hedge"
-  \include "seamus-cooleys"
+  \include "hector-hero.ily"
+  \include "the-hole-in-the-hedge.ily"
+  \include "seamus-cooleys.ily"
 
   \hr
 
-  % Pride
-  % Rights
+  \include "the-pride-of-petravore.ily"
+  \include "the-rights-of-man.ily"
   
+  \hr
+
   \include "si-beag-si-mor.ily"
   \include "the-south-wind.ily"
 
