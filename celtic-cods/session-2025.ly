@@ -15,6 +15,11 @@ hr = \markup {
   }
 }
 
+mark = #(define-music-function (text notes) (string? ly:music?)
+#{
+  \tweak text $text \startMeasureSpanner $notes \stopMeasureSpanner
+#})
+
 \paper {
   indent = 0
   top-margin = 15
@@ -148,9 +153,11 @@ hr = \markup {
   \include "union-ni-scannlain.ily"
 
   \hr
-  
-  % Josephin
-  % Anglaise
+
+  \include "josefins.ily"
+  \include "anglaise.ily"
+
+  \hr
   
   % Dusty
   % Pipe
