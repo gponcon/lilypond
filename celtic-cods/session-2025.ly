@@ -2,10 +2,6 @@
 
 #(set-global-staff-size 14)
 
-% Annotations:
-% \textMark ""
-% \tweak text "" \startMeasureSpanner ... \stopMeasureSpanner
-
 hr = \markup {
   \override #'(thickness . 1)
   \column {

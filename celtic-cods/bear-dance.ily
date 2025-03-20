@@ -6,7 +6,7 @@
     opus = "Polka | R | .'·'"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { \textMark "^la" a1:m a:m \tweak text "x2" \startMeasureSpanner a1:m g \stopMeasureSpanner e:m a:m }
-    \repeat volta 2 { \tweak text "x3" \startMeasureSpanner a1:m g \stopMeasureSpanner e:m a:m }
+    \repeat volta 2 { \textMark "^la" a1:m a:m \mark "x2" { a1:m g } e:m a:m }
+    \repeat volta 2 { \mark "x3" { a1:m g } e:m a:m }
   }
 }

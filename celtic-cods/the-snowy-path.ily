@@ -6,7 +6,7 @@
     opus = "Slip Jig | R | .'·' ?"
   }
   \new ChordGrid \chordmode {
-    d1 g d e:m d \tweak text "x4" \startMeasureSpanner g \stopMeasureSpanner d e:m a a g d e:m
+    d1 g d e:m d \mark "x4" g d e:m a a g d e:m
   }
 }
 \score {

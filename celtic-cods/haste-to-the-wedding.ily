@@ -6,6 +6,6 @@
     opus = "Jig | R | ._'·_' ou :_':_'"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 4 { \tweak text "x4" \startMeasureSpanner d1 g d a d1 g a d \stopMeasureSpanner }
+    \repeat volta 4 { \mark "x4" { d1 g d a d1 g a d } }
   }
 }

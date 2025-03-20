@@ -7,7 +7,7 @@
     opus = "Bourrée | R | ?"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { \tweak text "x3" \startMeasureSpanner e1:m d2 e:m \stopMeasureSpanner c1 d2 e:m }
+    \repeat volta 2 { \mark "x3" { e1:m d2 e:m } c1 d2 e:m }
     \repeat volta 2 { e1:m g d b c g d e:m }
   }
 }

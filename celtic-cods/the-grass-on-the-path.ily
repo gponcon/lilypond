@@ -6,7 +6,7 @@
     opus = "Mazurka"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { s1 \tweak text "x2" \startMeasureSpanner d d a d \stopMeasureSpanner }
-    \repeat volta 2 { s1 \tweak text "x2" \startMeasureSpanner a1 d2 g g4 a2. d1 \stopMeasureSpanner }
+    \repeat volta 2 { s1 \mark "x2" { d d a d } }
+    \repeat volta 2 { s1 \mark "x2" { a1 d2 g g4 a2. d1 } }
   }
 }
