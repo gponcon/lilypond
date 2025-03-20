@@ -107,7 +107,7 @@ mark = #(define-music-function (text notes) (string? ly:music?)
 
   \hr
   
-  % Killoran's - chords & musique introuvables
+  \include "killorans-church.ily"
   \include "air-mignonne.ily"
   \include "as-i-went-upon-the-ice.ily"
 
