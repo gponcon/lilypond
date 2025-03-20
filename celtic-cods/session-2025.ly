@@ -154,9 +154,9 @@ mark = #(define-music-function (text notes) (string? ly:music?)
   \include "anglaise.ily"
 
   \hr
-  
-  % Dusty
-  % Pipe
+
+  \include "dusty-windowsills.ily"
+  \include "the-pipe-hob.ily"
   \include "the-irish-washerwoman.ily"
 
   \hr
@@ -182,7 +182,7 @@ mark = #(define-music-function (text notes) (string? ly:music?)
   \hr
   
   \include "cooleys.ily"
-  % Buck oranmore
+  % Buck oranmore - abandonné
   \include "the-silver-spear.ily"
   
   \hr
