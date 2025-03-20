@@ -143,9 +143,11 @@ hr = \markup {
   \include "going-well-water.ily"
 
   \hr
-  
-  % Eleanor plunkett
-  % Inion scannlain
+
+  \include "eleanor.ily"
+  \include "union-ni-scannlain.ily"
+
+  \hr
   
   % Josephin
   % Anglaise
