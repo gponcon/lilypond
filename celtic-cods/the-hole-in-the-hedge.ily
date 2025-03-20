@@ -6,8 +6,7 @@
     opus = "Valse | R | :'':''"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { d1 d d a d d g d2 a }
-    \break
-    \repeat volta 2 { d1 b:m g d2. a4 d1 b:m g d2 a }
+    \repeat volta 4 { d1 d \altf { d a } { g d2 a } }
+    \repeat volta 4 { d1 b:m g \altf { d2. a4 } { d2 a } }
   }
 }

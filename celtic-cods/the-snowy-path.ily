@@ -16,6 +16,6 @@
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { d1 g d e:m }
-    \repeat volta 2 { a1 g \alternative { \volta 1 { b:m d } \volta 2 { d e:m } } }
+    \repeat volta 2 { a1 g \altt { b:m d } { d e:m } }
   }
 }

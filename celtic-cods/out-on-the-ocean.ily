@@ -6,7 +6,7 @@
     opus = "Jig | R | :_':_'"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 4 { g1 g c \alternative { \volta 1,3 { d } \volta 2,4 { d2 g } } }
+    \repeat volta 4 { g1 g c \altf d { d2 g } }
     \repeat volta 2 { e1:m e:m b:m7 \mark "x2" { c g } d2 g }
   }
 }

@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-#(set-global-staff-size 14)
+#(set-global-staff-size 12)
 
 hr = \markup {
   \override #'(thickness . 1)
@@ -16,6 +16,16 @@ mark = #(define-music-function (text notes) (string? ly:music?)
   \tweak text $text \startMeasureSpanner $notes \stopMeasureSpanner
 #})
 
+altt = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
+#{
+  \alternative { \volta 1 { $alt1 } \volta 2 { $alt2 } }
+#})
+
+altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
+#{
+  \alternative { \volta 1,3 { $alt1 } \volta 2,4 { $alt2 } }
+#})
+
 \paper {
   indent = 0
   top-margin = 15
@@ -24,8 +34,8 @@ mark = #(define-music-function (text notes) (string? ly:music?)
   ragged-right = ##f
   print-page-number = #f
   system-system-spacing.basic-distance = #0
-  score-markup-spacing = #'((basic-distance . 15)
-                            (minimum-distance . 10)
+  score-markup-spacing = #'((basic-distance . 8)
+                            (minimum-distance . 4)
                             (padding . 5)
                             (stretchability . 20))
   oddFooterMarkup = \markup \fill-line {
@@ -65,7 +75,7 @@ mark = #(define-music-function (text notes) (string? ly:music?)
   }
   \header {
     title = "Session 2025"
-    subtitle = "v0.1.0"
+    subtitle = "v0.1.1"
   }
 
   \include "hector-hero.ily"
@@ -124,7 +134,7 @@ mark = #(define-music-function (text notes) (string? ly:music?)
 
   \hr
   
-  \include "au-bord-de-leau"
+  \include "au-bord-de-leau.ily"
 
   \hr
 
@@ -209,6 +219,7 @@ mark = #(define-music-function (text notes) (string? ly:music?)
   \hr
   
   \include "haste-to-the-wedding.ily"
+  \pageBreak
   \include "the-german-beau.ily"
   \include "leslies.ily"
 

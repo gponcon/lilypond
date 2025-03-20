@@ -7,6 +7,6 @@
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { s1 \bar ".|:" \mark "2x2" { e:m c:7 g d } }
-    \repeat volta 4 { c1 g d \alternative { \volta 1,3 { b:m } \volta 2,4 { \mark "x6" { e:m } } } }
+    \repeat volta 4 { c1 g d \altf b:m { \mark "x6" { e:m } } }
   }
 }

@@ -6,8 +6,7 @@
     opus = "Polka | R | ?"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { s1 a:m a:m a:m g a:m a:m g a:m }
-    \break
-    \repeat volta 2 { s1 a:m e:m g e2:m d:7 a1:m e:m g2 e:m a1:m }
+    \repeat volta 4 { \altf s1 {} a:m a:m \altf { a:m g } { g a:m } }
+    \repeat volta 4 { \altf s1 {} a:m e:m \altf { g e2:m d:7 } { g2 e:m a1:m } }
   }
 }

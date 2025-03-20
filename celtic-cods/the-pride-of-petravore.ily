@@ -6,8 +6,7 @@
     opus = "Hornpipe | R | .'·' ?"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { e1:m e:m d d e:m e:m b:m e:m }
-    \break
-    \repeat volta 2 { e1:m g d c e:m g b:m e:m }
+    \repeat volta 4 { e1:m e:m \altf { d d } { b:m e:m } }
+    \repeat volta 4 { e1:m g \altf { d c } { b:m e:m } }
   }
 }
