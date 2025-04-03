@@ -3,11 +3,10 @@
 \score {
   \header {
     piece = "Seamus Cooley's"
-    opus = "Valse | R | :'':''"
+    opus = "Jig | R | ._'·_'"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { s1 a a d e a a d2 e a1 }
-    \break
-    \repeat volta 2 { s1 a a b:m b:m a \alternative { \volta 1 { a } \volta 2 { f:m } } d2 e a1 }
+    \repeat volta 2 { s1 \bar ".|:" \textMark "^mi" a a d e a a \textMark "||" d2 e \textMark "| ^do# 𝄐" a1 }
+    \repeat volta 2 { s1 a a \textMark "^(fa#)" b:m b:m a \alternative { \volta 1 { a } \volta 2 { f:m } } \textMark "||" d2 e \textMark "| ^do# 𝄐" a1 }
   }
 }
