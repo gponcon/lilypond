@@ -75,7 +75,7 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   }
   \header {
     title = "Session 2025"
-    subtitle = "v0.1.2"
+    subtitle = "v0.1.3"
   }
 
   \include "hector-hero.ily"
@@ -182,8 +182,8 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   \hr
   
   \include "acadien.ily"
-  \include "andy-dejarlis-jig.ily"
   \include "peggys-jig.ily"
+  \include "andy-dejarlis-jig.ily"
   
   \hr
   
@@ -219,9 +219,8 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   \hr
   
   \include "haste-to-the-wedding.ily"
-  \pageBreak
-  \include "the-german-beau.ily"
   \include "leslies.ily"
+  \include "the-german-beau.ily"
 
   \hr
   
@@ -232,5 +231,10 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   \hr
 
   \include "macleods-farewell.ily"
+  \include "the-otters-holt.ily"
+  \include "toss-the-feathers.ily"
+  
+  \hr
+  
   \include "humours-of-bandon.ily"
 }

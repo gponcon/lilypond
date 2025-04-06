@@ -2,7 +2,7 @@
 
 \score {
   \header {
-    piece = "MacLeod's Farewell (Cooley)"
+    piece = "MacLeod's Farewell"
     opus = "Reel | RR | :':'"
   }
   \new ChordGrid \chordmode {

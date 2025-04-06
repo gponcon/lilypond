@@ -7,6 +7,6 @@
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { g1 c \altf { d g } { d2 d:7 g1 } } % pas sur pour d2
-    \repeat volta 2 { d1 g d c d d d:7 g }
+    \repeat volta 2 { g1 g d c2. g4 g1 g d:7 g }
   }
 }

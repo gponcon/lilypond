@@ -3,7 +3,7 @@
 \score {
   \header {
     piece = "Fasten The Leg In Her Jig"
-    opus = "Jig | R | .'·' -> :':'"
+    opus = "Jig | R | :':'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { s1 \bar ".|:" \mark "x2" { \textMark "^ré .'·'" g1 } d \textMark "alt. [C]" c2 d \mark "x2" { g1 } \textMark "alt. [Em]" e2:m a d1 }
