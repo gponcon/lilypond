@@ -2,11 +2,12 @@
 
 \score {
   \header {
-    piece = "Inisheer (à vérifier)"
+    piece = "Inisheer"
     opus = "Valse | R | :'':''"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 4 { g1 e:m c \altf d { d2. g4 } }
-    \repeat volta 2 { e1:m b:m e:m b:m c g \break c2. d4 g1 c g c2 d b1:m b2.:m c4 g1 c2. d4 g1 }
+    \repeat volta 4 { g1 e:m c \altf d { d2 g } }
+    \repeat volta 2 { e1:m b:m }
+    \repeat volta 3 { \textMark "(x3)" c g c2 d \alternative { \volta 1,3 g1 \volta 2 b1:m } }
   }
 }

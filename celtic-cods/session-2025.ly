@@ -75,7 +75,7 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   }
   \header {
     title = "Session 2025"
-    subtitle = "v0.1.3"
+    subtitle = "v0.1.4"
   }
 
   \include "hector-hero.ily"
@@ -192,7 +192,7 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   \hr
   
   \include "cooleys.ily"
-  % Buck oranmore - abandonné
+  \include "bucks-of-oranmore.ily"
   \include "the-silver-spear.ily"
   
   \hr

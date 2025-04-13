@@ -3,7 +3,7 @@
 \score {
   \header {
     piece = "The Pride Of Petravore"
-    opus = "Hornpipe | R | .'·' ?"
+    opus = "Hornpipe | R | ._'·_'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { e1:m e:m \altf { d d } { b:m e:m } }

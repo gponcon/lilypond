@@ -2,7 +2,7 @@
 
 \score {
   \header {
-    piece = "The Irish Washerwoman (Dusty, fin série Kesh)"
+    piece = "The Irish Washerwoman"
     opus = "Jig | R | ._'·_'"
   }
   \new ChordGrid \chordmode {
