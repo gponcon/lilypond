@@ -2,10 +2,11 @@
 
 \score {
   \header {
-    piece = "L'air mignonne (à revoir)"
-    opus = "Barndance | R | ?"
+    piece = "L'air mignonne (the session #5)"
+    opus = "Barndance | R | :_':_'"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { s2. g4 g4 d2. d2. g4 g2 d g1 g4 d2. d2 g g d \mark "x2" { g1 g2 d d4 g2. g2 d } g2 d }
+    \repeat volta 2  { s1 \bar ".|:" g2 d g d c g \altt { g d }  { d g } }
+    \repeat volta 2 { c2 e:m c e:m c g \altt d1 { d2 g } }
   }
 }
