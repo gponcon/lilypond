@@ -60,13 +60,13 @@ hr = \markup {
         \null
         \fontsize #2 \fromproperty #'header:opus
       }
-    } 
+    }
   }
   \header {
     title = "BAL"
     subtitle = "v0.2.5"
   }
-  
+
   \include "the-swallowtail.ily"
   \include "the-black-rogue.ily"
   \include "the-ship-in-full-sail.ily"
@@ -82,35 +82,35 @@ hr = \markup {
   \include "the-belfast.ily"
 
   \hr
-  
+
   \include "tripping-up-the-stairs.ily"
   \include "scatter-the-mud.ily"
   \include "fasten-the-leg-in-her-jig.ily"
-  
+
   \hr
-  
+
   \include "the-britches.ily"
   \include "egans-kerry-polka.ily"
-  
+
   \hr
-  
+
   \include "maggie-in-the-woods.ily"
   \include "denis-murphys.ily"
-  
+
   \hr
-  
+
   \include "si-beag-si-mor.ily"
   \include "the-south-wind.ily"
-  
+
   \hr
 
   \include "the-kesh.ily"
   \include "out-on-the-ocean.ily"
   \include "morrisons.ily"
   \include "the-irish-washerwoman.ily"
-  
+
   \hr
-  
+
   \include "o-keeffes.ily"
   % TODO: star above
 
@@ -123,47 +123,47 @@ hr = \markup {
   \include "the-boys-of-bluehill.ily"
 
   \hr
-  
+
   \include "macleods-farewell.ily"
   \include "cooleys.ily"
   \include "the-silver-spear.ily"
-  
+
   \hr
-  
+
   \include "sweets-of-may.ily"
-  
+
   \hr
-  
+
   \include "the-galway-belle.ily"
   \include "the-little-diamond.ily"
-  
+
   \hr
-  
+
   \include "acadien.ily"
   %\include "peggys-jig.ily"
   \include "andy-dejarlis-jig.ily"
-  
+
   % TODO: Merrily
-  
+
   \hr
-  
+
   \include "humours-of-bandon.ily"
-  
+
   \hr
-  
+
   \include "sangshyttevalsen.ily"
   \include "far-away.ily"
-  
+
   % TODO: série Road Lisdoon
-  
+
   \hr
-  
+
   \include "trip-to-the-cottage.ily"
-  
+
   % TODO: temperance, st anne, the otter + toss
-  
+
   \hr
-  
+
   \include "haste-to-the-wedding.ily"
   \include "the-german-beau.ily"
   \include "leslies.ily"

@@ -71,7 +71,7 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
         \null
         \fontsize #2 \fromproperty #'header:opus
       }
-    } 
+    }
   }
   \header {
     title = "Session 2025"
@@ -86,20 +86,20 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
 
   \include "the-pride-of-petravore.ily"
   \include "the-rights-of-man.ily"
-  
+
   \hr
 
   \include "si-beag-si-mor.ily"
   \include "the-south-wind.ily"
 
   \hr
-  
+
   \include "the-britches.ily"
   \include "egans-kerry-polka.ily"
   \include "john-ryans.ily"
 
   \hr
-  
+
   \include "the-kesh.ily"
   \include "out-on-the-ocean.ily"
   \include "morrisons.ily"
@@ -110,30 +110,30 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   \include "crested-hens.ily"
 
   \hr
-  
+
   \include "humours-of-flinn.ily"
   \include "far-away.ily"
   \include "sangshyttevalsen.ily"
 
   \hr
-  
+
   \include "killorans-church.ily"
   \include "air-mignonne.ily"
   \include "as-i-went-upon-the-ice.ily"
 
   \hr
-  
+
   \include "the-snowy-path.ily"
   \include "calliope-house.ily"
   \include "o-keeffes.ily"
 
   \hr
-  
+
   \include "sonnys-mazurka.ily"
   \include "the-grass-on-the-path.ily"
 
   \hr
-  
+
   \include "au-bord-de-leau.ily"
 
   \hr
@@ -143,7 +143,7 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   \include "maggie-in-the-woods.ily"
 
   \hr
-  
+
   \include "inisheer.ily"
 
   \hr
@@ -170,39 +170,39 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   \include "the-irish-washerwoman.ily"
 
   \hr
-  
+
   \include "sweets-of-may.ily"
-  
+
   \hr
-  
+
   \include "mussels-in-the-corner.ily"
   \include "she-said-she-couldnt-dance.ily"
   \include "paddys-jig.ily"
 
   \hr
-  
+
   \include "acadien.ily"
   \include "peggys-jig.ily"
   \include "andy-dejarlis-jig.ily"
-  
+
   \hr
-  
+
   \include "margarets.ily"
-  
+
   \hr
-  
+
   \include "cooleys.ily"
   \include "bucks-of-oranmore.ily"
   \include "the-silver-spear.ily"
-  
+
   \hr
-  
+
   \include "tripping-up-the-stairs.ily"
   \include "scatter-the-mud.ily"
   \include "fasten-the-leg-in-her-jig.ily"
-  
+
   \hr
-  
+
   \include "the-swallowtail.ily"
   \include "the-black-rogue.ily"
   \include "the-ship-in-full-sail.ily"
@@ -215,26 +215,26 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   \hr
 
   \include "trip-to-the-cottage.ily"
-  
+
   \hr
-  
+
   \include "haste-to-the-wedding.ily"
   \include "leslies.ily"
   \include "the-german-beau.ily"
 
   \hr
-  
+
   \include "bear-dance.ily"
   \include "the-galway-belle.ily"
   \include "the-little-diamond.ily"
-  
+
   \hr
 
   \include "macleods-farewell.ily"
   \include "the-otters-holt.ily"
   \include "toss-the-feathers.ily"
-  
+
   \hr
-  
+
   \include "humours-of-bandon.ily"
 }
