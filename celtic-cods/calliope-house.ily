@@ -2,7 +2,7 @@
 
 \score {
   \header {
-    piece = "Calliope House (à vérifier)"
+    piece = "Calliope House"
     opus = "Jig | R | :_':_'"
   }
   \new ChordGrid \chordmode {

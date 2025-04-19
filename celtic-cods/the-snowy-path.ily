@@ -3,7 +3,7 @@
 \score {
   \header {
     piece = "The Snowy Path"
-    opus = "Slip Jig | R | .'·'"
+    opus = "Slip Jig | R | :_':_':_'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { d1 g d e:m }

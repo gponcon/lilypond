@@ -3,7 +3,7 @@
 \score {
   \header {
     piece = "Crested Hens"
-    opus = "Valse | R | :'':''"
+    opus = "Valse | R | :''"
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { \mark "2x2" { \textMark "^mi" e1:m e:m b:m b:m } }

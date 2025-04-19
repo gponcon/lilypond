@@ -3,7 +3,7 @@
 \score {
   \header {
     piece = "Toss The Feathers"
-    opus = "Reel | R | :':' ?"
+    opus = "Reel | R | :':'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { \mark "x3" { d1 d2 c } a1:m \altt { c2 a:m } { c2 g } }

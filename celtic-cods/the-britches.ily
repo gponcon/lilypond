@@ -3,7 +3,7 @@
 \score {
   \header {
     piece = "The Britches Full Of Stitches"
-    opus = "Polka | R | .'·'.'·'"
+    opus = "Polka | R | .'·'"
   }
   \new ChordGrid \chordmode {
     \tweak text "A + B" \startMeasureSpanner

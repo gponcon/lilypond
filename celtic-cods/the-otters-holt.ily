@@ -3,7 +3,7 @@
 \score {
   \header {
     piece = "The Otter's Holt"
-    opus = "Reel | R | :':' ?"
+    opus = "Reel | R | :_':_'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { s1 \bar ".|:" b:m a \altf { b:m a2 b:m } { d2 a b1:m } }
