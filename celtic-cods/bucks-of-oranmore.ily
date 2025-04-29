@@ -1,5 +1,6 @@
 \version "2.24.4"
 
+\indexItem #"The Bucks Of Oranmore" \markup { "The Bucks Of Oranmore" }
 \score {
   \header {
     piece = "The Bucks Of Oranmore (the session #14)"

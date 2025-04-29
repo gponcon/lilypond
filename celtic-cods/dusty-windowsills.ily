@@ -1,5 +1,6 @@
 \version "2.24.4"
 
+\indexItem #"Dusty Windowsills" \markup { "Dusty Windowsills" }
 \score {
   \header {
     piece = "Dusty Windowsills"

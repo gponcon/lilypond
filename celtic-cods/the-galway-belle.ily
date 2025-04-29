@@ -1,8 +1,9 @@
 \version "2.24.4"
 
+\indexItem #"The Galway Belle" \markup { "The Galway Belle" }
 \score {
   \header {
-    piece = "The Galway Belle (Bear Dance)"
+    piece = "The Galway Belle"
     opus = "Polka | RR | .'·'"
   }
   \new ChordGrid \chordmode {

@@ -1,13 +1,15 @@
 \version "2.24.4"
 
-#(set-global-staff-size 12)
+\include "toc-init-index.ily"
+
+#(set-global-staff-size 11)
 
 hr = \markup {
   \override #'(thickness . 1)
   \column {
     \vspace #0
-    \draw-squiggle-line #0.5 #'(6 . 0) ##t
-    \vspace #1
+    \draw-hline
+    \vspace #0
   }
 }
 
@@ -34,10 +36,18 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   ragged-right = ##f
   print-page-number = #f
   system-system-spacing.basic-distance = #0
-  score-markup-spacing = #'((basic-distance . 8)
+  score-markup-spacing = #'((basic-distance . 6)
                             (minimum-distance . 4)
-                            (padding . 5)
+                            (padding . 4)
                             (stretchability . 20))
+  markup-system-spacing = #'((basic-distance . 4)
+                            (minimum-distance . 2)
+                            (padding . 3)
+                            (stretchability . 10))
+  markup-markup-spacing = #'((basic-distance . 0)
+                            (minimum-distance . 0)
+                            (padding . 5)
+                            (stretchability . 10))
   oddFooterMarkup = \markup \fill-line {
     ""
     \vspace #3 \bold \fromproperty #'page:page-number-string \vspace #3
@@ -54,7 +64,7 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   indent = 0
   \context {
     \ChordGrid
-    \override GridChordName.font-size = #5
+    \override GridChordName.font-size = #4
     \consists Measure_spanner_engraver
   }
   \context {
@@ -75,8 +85,11 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   }
   \header {
     title = "Session 2025"
-    subtitle = "v0.1.6"
+    subtitle = "v0.1.7"
   }
+
+  \markuplist \index
+  \pageBreak
 
   \include "hector-hero.ily"
   \include "the-hole-in-the-hedge.ily"
@@ -238,4 +251,3 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
 
   \include "humours-of-bandon.ily"
 }
-

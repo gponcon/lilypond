@@ -1,5 +1,6 @@
 \version "2.24.4"
 
+\indexItem #"Killoran's Church" \markup { "Killoran's Church" }
 \score {
   \header {
     piece = "Killoran's Church (V. simple, à vérifier)"

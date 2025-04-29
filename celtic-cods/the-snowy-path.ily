@@ -1,5 +1,6 @@
 \version "2.24.4"
 
+\indexItem #"The Snowy Path" \markup { "The Snowy Path" }
 \score {
   \header {
     piece = "The Snowy Path"

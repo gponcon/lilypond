@@ -1,9 +1,10 @@
 \version "2.24.4"
 
+\indexItem #"Union Ni Scannlain" \markup { "Union Ni Scannlain" }
 \score {
   \header {
     piece = "Union Ni Scannlain"
-    opus = "Valse | R | :'':''"
+    opus = "Valse | R | :':'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { g1 a:m g b:m c b:m a:m d }

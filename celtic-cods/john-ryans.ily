@@ -1,5 +1,6 @@
 \version "2.24.4"
 
+\indexItem #"John Ryan's Polka" \markup { "John Ryan's Polka (Titanic)" }
 \score {
   \header {
     piece = "John Ryan's Polka (Titanic)"

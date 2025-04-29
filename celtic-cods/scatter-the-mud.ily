@@ -1,5 +1,6 @@
 \version "2.24.4"
 
+\indexItem #"Scatter The Mud" \markup { "Scatter The Mud" }
 \score {
   \header {
     piece = "Scatter The Mud"

@@ -1,5 +1,6 @@
 \version "2.24.4"
 
+\indexItem #"Au bord de l'eau" \markup { "Au bord de l'eau" }
 \score {
   \header {
     piece = "Au bord de l'eau (à vérifier)"

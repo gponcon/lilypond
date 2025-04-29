@@ -1,6 +1,7 @@
 \version "2.24.4"
-
 % Source : https://chordify.net/fr/chords/remi-geffroy-trio-l-estropie-live-bal-remi-geffroy
+
+\indexItem #"Estropié" \markup { "Estropié (L')" }
 \score {
   \header {
     piece = "L'estropié (à vérifier)"

@@ -1,5 +1,6 @@
 \version "2.24.4"
 
+\indexItem #"Denis Murphy's Slide" \markup { "Denis Murphy's Slide" }
 \score {
   \header {
     piece = "Denis Murphy's"

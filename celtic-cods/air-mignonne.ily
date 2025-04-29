@@ -1,5 +1,6 @@
 \version "2.24.4"
 
+\indexItem #"air mignonne (the session #5)" \markup { "Air Mignonne (L')" }
 \score {
   \header {
     piece = "L'air mignonne (the session #5)"

@@ -1,6 +1,7 @@
 \version "2.24.4"
 
 % Source https://musescore.com/peter_94/the-humours-of-flinn
+\indexItem #"The Humours of Flinn" \markup { "The Humours of Flinn" }
 \score {
   \header {
     piece = "The Humours Of Flinn (à vérifier)"
