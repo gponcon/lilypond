@@ -4,7 +4,7 @@
 \score {
   \header {
     piece = "O'Keeffe's"
-    opus = "Slide | R | .'·'"
+    opus = "Slide | R | .'·'.'·'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { a2 g a2 g a2 g a2 g }

@@ -3,7 +3,7 @@
 \indexItem #"Union Ni Scannlain" \markup { "Union Ni Scannlain" }
 \score {
   \header {
-    piece = "Union Ni Scannlain"
+    piece = "⚠ Union Ni Scannlain"
     opus = "Valse | R | :':'"
   }
   \new ChordGrid \chordmode {

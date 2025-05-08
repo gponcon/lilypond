@@ -85,7 +85,7 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   }
   \header {
     title = "Session 2025"
-    subtitle = "v0.1.7"
+    subtitle = "v0.1.8"
   }
 
   \markuplist \index

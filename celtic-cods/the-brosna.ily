@@ -4,7 +4,7 @@
 \score {
   \header {
     piece = "The Brosna"
-    opus = "Slide | R | .'·'"
+    opus = "Slide | R | .'·'.'·'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { g1 d g d2 g }

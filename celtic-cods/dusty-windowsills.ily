@@ -4,7 +4,7 @@
 \score {
   \header {
     piece = "Dusty Windowsills"
-    opus = "Jig | R | ._'·_' ?"
+    opus = "Jig | R | :_':_'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { s1 \bar ".|:" a1:m a:m \altf { g g } { c g2 a:m } }

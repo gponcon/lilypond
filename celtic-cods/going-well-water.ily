@@ -4,7 +4,7 @@
 \score {
   \header {
     piece = "Going To The Well For The Water"
-    opus = "Slide | R | ._'·_'"
+    opus = "Slide | R | ._'·_'._'·_'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { d1 g a \textMark "|||" g2 a4 d }
