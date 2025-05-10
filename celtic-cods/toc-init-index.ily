@@ -44,11 +44,11 @@
 
 \paper {
   indexTitleMarkup = \markup \column {
-    \fontsize #4 \fill-line { \null "Index" \null }
+    \fontsize #4 \fill-line { \null "" \null }
     \hspace #1
   }
   indexItemMarkup = \markup \large \fill-line {
-    \fill-line { \fill-with-pattern #1 #RIGHT . \fontsize #2 \fromproperty #'index:text \fontsize #2 \fromproperty #'index:page }
+    \fill-line { \override #'(line-width . 60) \fill-with-pattern #1 #RIGHT . \fontsize #2 \fromproperty #'index:text \fontsize #2 \fromproperty #'index:page }
   }
   indexSectionMarkup = \markup \column {
     \hspace #1

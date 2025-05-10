@@ -3,7 +3,7 @@
 \indexItem #"The Otter's Holt" \markup { "The Otter's Holt" }
 \score {
   \header {
-    piece = "The Otter's Holt"
+    piece = "⚠ The Otter's Holt"
     opus = "Reel | R | :_':_'"
   }
   \new ChordGrid \chordmode {
