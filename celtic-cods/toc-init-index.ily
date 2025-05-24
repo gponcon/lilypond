@@ -48,7 +48,7 @@
     \hspace #1
   }
   indexItemMarkup = \markup \large \fill-line {
-    \fill-line { \override #'(line-width . 60) \fill-with-pattern #1 #RIGHT . \fontsize #2 \fromproperty #'index:text \fontsize #2 \fromproperty #'index:page }
+    \fill-line { \override #'(line-width . 60) \fill-with-pattern #1 #RIGHT . \fontsize #1 \fromproperty #'index:text \fontsize #1 \fromproperty #'index:page }
   }
   indexSectionMarkup = \markup \column {
     \hspace #1

@@ -1,56 +1,7 @@
 \version "2.24.4"
 
-#(set-global-staff-size 14)
-
-% Annotations:
-% \textMark ""
-% \tweak text "" \startMeasureSpanner ... \stopMeasureSpanner
-
-hr = \markup {
-  \override #'(thickness . 1)
-  \column {
-    \vspace #1
-    \draw-squiggle-line #0.5 #'(6 . 0) ##t
-    \vspace #1
-  }
-}
-
-\paper {
-  indent = 0
-  top-margin = 15
-  bottom-margin = 15
-  line-width = 18\cm
-  ragged-right = ##f
-  print-page-number = #f
-  system-system-spacing.basic-distance = #0
-  score-markup-spacing = #'((basic-distance . 15)
-                            (minimum-distance . 10)
-                            (padding . 5)
-                            (stretchability . 20))
-  oddFooterMarkup = \markup \fill-line {
-    ""
-    \vspace #3 \bold \fromproperty #'page:page-number-string \vspace #3
-    ""
-  }
-  evenFooterMarkup = \markup \fill-line {
-    ""
-    \vspace #3 \bold \fromproperty #'page:page-number-string \vspace #3
-    ""
-  }
-}
-
-\layout {
-  indent = 0
-  \context {
-    \ChordGrid
-    \override GridChordName.font-size = #5
-    \consists Measure_spanner_engraver
-  }
-  \context {
-    \Voice
-    \override TextMark.font-size = 20
-  }
-}
+\include "toc-init-index.ily"
+\include "global-params.ily"
 
 \book {
   \paper {
@@ -64,8 +15,11 @@ hr = \markup {
   }
   \header {
     title = "BAL"
-    subtitle = "v0.2.5"
+    subtitle = "Session du 8 juin 2025 v0.1.1"
   }
+
+  \markuplist \index
+  \pageBreak
 
   \include "the-swallowtail.ily"
   \include "the-black-rogue.ily"
@@ -112,7 +66,7 @@ hr = \markup {
   \hr
 
   \include "o-keeffes.ily"
-  % TODO: star above
+  \include "the-star-above-the-garter.ily"
 
   \hr
 
@@ -124,9 +78,20 @@ hr = \markup {
 
   \hr
 
+  \include "the-hole-in-the-hedge.ily"
+  \include "seamus-cooleys.ily"
+  \include "dusty-windowsills.ily"
+
+  \hr
+
   \include "macleods-farewell.ily"
   \include "cooleys.ily"
   \include "the-silver-spear.ily"
+
+  \hr
+
+  \include "sangshyttevalsen.ily"
+  \include "far-away.ily"
 
   \hr
 
@@ -140,10 +105,11 @@ hr = \markup {
   \hr
 
   \include "acadien.ily"
-  %\include "peggys-jig.ily"
   \include "andy-dejarlis-jig.ily"
 
-  % TODO: Merrily
+  \hr
+
+  \include "merrily.ily"
 
   \hr
 
@@ -151,16 +117,32 @@ hr = \markup {
 
   \hr
 
-  \include "sangshyttevalsen.ily"
-  \include "far-away.ily"
+  \include "saint-anne.ily"
+  \include "the-high-drive.ily"
 
-  % TODO: série Road Lisdoon
+  \hr
+
+  \include "road-lisdoonvarna.ily"
+  \include "denis-murphys-slide.ily"
+  \include "the-brosna.ily"
+  \include "going-well-water.ily"
 
   \hr
 
   \include "trip-to-the-cottage.ily"
 
-  % TODO: temperance, st anne, the otter + toss
+  \hr
+
+  \include "temperance-reel.ily"
+
+  \hr
+
+  \include "bucks-of-oranmore.ily"
+
+  \hr
+
+  \include "the-otters-holt.ily"
+  \include "toss-the-feathers.ily"
 
   \hr
 
