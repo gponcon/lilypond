@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Pipe On The Hob" \markup { "The Pipe On The Hob" }
+\indexItem #"Pipe On The Hob" \markup { "Pipe On The Hob (The)" }
 \score {
   \header {
     piece = "⚠ The Pipe On The Hob"

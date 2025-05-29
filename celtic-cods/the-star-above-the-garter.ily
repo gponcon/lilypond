@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Star Above The Garter" \markup { "The Star Above The Garter" }
+\indexItem #"Star Above The Garter" \markup { "Star Above The Garter (The)" }
 \score {
   \header {
     piece = "⚠ The Star Above The Garter"

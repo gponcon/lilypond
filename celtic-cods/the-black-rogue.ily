@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Black Rogue" \markup { "The Black Rogue" }
+\indexItem #"Black Rogue" \markup { "Black Rogue (The)" }
 \score {
   \header {
     piece = "The Black Rogue"

@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Boys Of Bluehill" \markup { "The Boys Of Bluehill" }
+\indexItem #"Boys Of Bluehill" \markup { "Boys Of Bluehill (The)" }
 \score {
   \header {
     piece = "The Boys Of Bluehill (officiel)"

@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Road To Lisdoonvarna" \markup { "The Road To Lisdoonvarna" }
+\indexItem #"Road To Lisdoonvarna" \markup { "Road To Lisdoonvarna (The)" }
 \score {
   \header {
     piece = "The Road To Lisdoonvarna"

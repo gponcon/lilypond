@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Irish Washerwoman" \markup { "The Irish Washerwoman" }
+\indexItem #"Irish Washerwoman" \markup { "Irish Washerwoman (The)" }
 \score {
   \header {
     piece = "The Irish Washerwoman"

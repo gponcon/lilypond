@@ -1,7 +1,7 @@
 \version "2.24.4"
 
-\indexItem #"Egan's - The Kerry Polka" \markup { "Egan's - The Kerry Polka" }
-\indexItem #"The Kerry Polka" \markup { "The Kerry Polka (Egan's)" }
+%\indexItem #"Egan's Kerry Polka" \markup { "Egan's Kerry Polka (The)" }
+\indexItem #"Kerry Polka" \markup { "Kerry Polka (The, Egan's)" }
 \score {
   \header {
     piece = "Egan's - The Kerry Polka"

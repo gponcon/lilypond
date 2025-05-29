@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Swallowtail" \markup { "The Swallowtail" }
+\indexItem #"Swallowtail" \markup { "Swallowtail (The)" }
 \score {
   \header {
     piece = "The Swallowtail"

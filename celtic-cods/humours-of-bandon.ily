@@ -26,8 +26,8 @@
   \new ChordGrid \chordmode {
     \repeat volta 4 {
       \alternative {
-        \volta 1,2,4 { g1 d g d \mark ":':'" { g2 c g d g c g1 } }
-        \volta 3 { g1 d e:m c g c g d }
+        \volta 1,2,3,4,6,8 { g1 d g d \mark ":':'" { g2 c g d g c g1 } }
+        \volta 5,7 { g1 d e:m c g c g d }
       }
     }
   }

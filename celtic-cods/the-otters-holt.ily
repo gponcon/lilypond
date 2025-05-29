@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Otter's Holt" \markup { "The Otter's Holt" }
+\indexItem #"Otter's Holt" \markup { "Otter's Holt (The)" }
 \score {
   \header {
     piece = "The Otter's Holt"

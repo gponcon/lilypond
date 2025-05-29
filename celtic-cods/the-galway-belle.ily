@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Galway Belle" \markup { "The Galway Belle" }
+\indexItem #"Galway Belle" \markup { "Galway Belle (The)" }
 \score {
   \header {
     piece = "The Galway Belle"

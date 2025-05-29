@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Grass On The Path" \markup { "The Grass On The Path" }
+\indexItem #"Grass On The Path" \markup { "Grass On The Path (The)" }
 \score {
   \header {
     piece = "The Grass On The Path"

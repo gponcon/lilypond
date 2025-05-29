@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The German Beau" \markup { "The German Beau" }
+\indexItem #"German Beau" \markup { "German Beau (The)" }
 \score {
   \header {
     piece = "The German Beau"

@@ -15,7 +15,7 @@
   }
   \header {
     title = "Session 2025"
-    subtitle = "v0.3"
+    subtitle = "v0.4"
   }
 
   \markuplist \index
@@ -184,4 +184,12 @@
   \include "temperance-reel.ily"
   \include "saint-anne.ily"
   \include "the-high-drive.ily"
+
+  \hr
+
+  \include "alt-game-of-thrones.ily"
+  \include "alt-pirate-caraibes.ily"
+  \include "alt-tetris.ily"
+  \include "alt-wellerman.ily"
+
 }

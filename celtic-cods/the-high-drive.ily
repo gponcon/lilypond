@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The High Drive" \markup { "The High Drive" }
+\indexItem #"High Drive" \markup { "High Drive (The)" }
 \score {
   \header {
     piece = "The High Drive"

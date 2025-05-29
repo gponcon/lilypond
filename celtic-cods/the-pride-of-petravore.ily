@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Pride Of Petravore" \markup { "The Pride Of Petravore" }
+\indexItem #"Pride Of Petravore" \markup { "Pride Of Petravore (The)" }
 \score {
   \header {
     piece = "The Pride Of Petravore"

@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Rights Of Man" \markup { "The Rights Of Man" }
+\indexItem #"Rights Of Man" \markup { "Rights Of Man (The)" }
 \score {
   \header {
     piece = "The Rights Of Man"

@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"Seamus Cooley's" \markup { "Seamus Cooley's" }
+\indexItem #"Seamus Cooley" \markup { "Seamus Cooley's" }
 \score {
   \header {
     piece = "Seamus Cooley's"

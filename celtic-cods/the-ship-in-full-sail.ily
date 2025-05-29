@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Ships In Full Sail" \markup { "The Ships In Full Sail" }
+\indexItem #"Ships In Full Sail" \markup { "Ships In Full Sail (The)" }
 \score {
   \header {
     piece = "The Ships In Full Sail"

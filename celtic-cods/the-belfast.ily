@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-\indexItem #"The Belfast" \markup { "The Belfast" }
+\indexItem #"Belfast" \markup { "Belfast (The)" }
 \score {
   \header {
     piece = "The Belfast"
