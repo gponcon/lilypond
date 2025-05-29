@@ -15,7 +15,7 @@
   }
   \header {
     title = "Session 2025"
-    subtitle = "v0.2"
+    subtitle = "v0.3"
   }
 
   \markuplist \index

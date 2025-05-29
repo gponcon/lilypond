@@ -20,7 +20,6 @@
 \score {
   \header {
     piece = "Humours of Bandon"
-    %piece = "Humours of Bandon #2 - simplifié"
     opus = "Jig | R | ._'·_'"
     title = "CUI"
   }

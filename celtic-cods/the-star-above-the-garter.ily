@@ -7,7 +7,7 @@
     opus = "Slide | R | .'·'.'·'"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 4 { g2 d c2 g4 d g2 d c2 d }
+    \repeat volta 2 { g2 d c2 g4 d g2 d c2 d }
     \repeat volta 4 { \mark "2x2" { d2 c4 g4 g4 c4 d2 } }
   }
 }

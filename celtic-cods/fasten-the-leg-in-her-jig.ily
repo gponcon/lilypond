@@ -3,7 +3,7 @@
 \indexItem #"Fasten The Leg In Her Jig" \markup { "Fasten The Leg In Her Jig" }
 \score {
   \header {
-    piece = "Fasten The Leg In Her Jig"
+    piece = "⚠ Fasten The Leg In Her Jig"
     opus = "Jig | R | :':'"
   }
   \new ChordGrid \chordmode {
