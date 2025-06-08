@@ -3,7 +3,7 @@
 \indexItem #"Merrily Kissed The Quaker" \markup { "Merrily Kissed The Quaker" }
 \score {
   \header {
-    piece = "Merrily Kissed The Quaker"
+    piece = "⚠ Merrily Kissed The Quaker"
     opus = "Slide | R | ._'·_'._'·_' ?"
   }
   \new ChordGrid \chordmode {

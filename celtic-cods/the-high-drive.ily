@@ -7,6 +7,6 @@
     opus = "Reel | R | :_':_'"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 4 { \mark "A et B" { \bar ".|:" s1 \bar ".|:" d1 g d \altf a1 { a2 d } } }
+    \repeat volta 4 { \mark "A, B, C, D" { \bar ".|:" s1 \bar ".|:" \textMark "C: [D/A/D], D: .''._'" d1 g d \altf a1 { a2 d } } }
   }
 }

@@ -7,9 +7,10 @@
     opus = "Reel | R | ._'·_'"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { \alternative {
-      \volta 1,2,3,5 { d1 d2 g d1 d2 a d1 d2 g d1 d2 a }
-      \volta 4 { d2 a d1 d2 a g2 a d2 a d1 d g2 a }
-    } }
+    \repeat volta 4 { d1 g d g d g b:m g }
+%     \repeat volta 2 { \alternative {
+%       \volta 1,2,3,5 { d1 d2 g d1 d2 a d1 d2 g d1 d2 a }
+%       \volta 4 { d2 a d1 d2 a g2 a d2 a d1 d g2 a }
+%     } }
   }
 }

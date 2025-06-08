@@ -15,7 +15,7 @@
   }
   \header {
     title = "BAL"
-    subtitle = "Session du 8 juin 2025 v0.1.1"
+    subtitle = "Session du 8 juin 2025 v0.2"
   }
 
   \markuplist \index
@@ -36,6 +36,7 @@
   \include "the-belfast.ily"
 
   \hr
+  \pageBreak
 
   \include "tripping-up-the-stairs.ily"
   \include "scatter-the-mud.ily"
@@ -52,6 +53,7 @@
   \include "denis-murphys.ily"
 
   \hr
+  \pageBreak
 
   \include "si-beag-si-mor.ily"
   \include "the-south-wind.ily"
@@ -89,6 +91,7 @@
   \include "the-silver-spear.ily"
 
   \hr
+  \pageBreak
 
   \include "sangshyttevalsen.ily"
   \include "far-away.ily"
@@ -147,6 +150,6 @@
   \hr
 
   \include "haste-to-the-wedding.ily"
-  \include "the-german-beau.ily"
   \include "leslies.ily"
+  \include "the-german-beau.ily"
 }

@@ -4,7 +4,7 @@
 \score {
   \header {
     piece = "Saint Anne's"
-    opus = "Reel | R | ._'·_'"
+    opus = "Reel | RR | ._'·_'"
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { d2 a d1 \altf { g1 d } { g2 a d1 } }
