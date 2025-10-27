@@ -3,7 +3,7 @@
 \indexItem #"Boys Of Bluehill" \markup { "Boys Of Bluehill (The)" }
 \score {
   \header {
-    piece = "⚠ The Boys Of Bluehill (officiel)"
+    piece = "The Boys Of Bluehill"
     opus = "Hornpipe | R | .'·'"
   }
   \new ChordGrid \chordmode {
