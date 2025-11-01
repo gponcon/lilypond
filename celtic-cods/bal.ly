@@ -15,7 +15,7 @@
   }
   \header {
     title = "BAL"
-    subtitle = "Session du 8 novembre 2025 v0.1"
+    subtitle = "Session du 8 novembre 2025 v0.2"
   }
 
   \markuplist \index
@@ -26,6 +26,9 @@
   \include "paddys-jig.ily"
 
   \hr
+  % \markup {
+  %   \fontsize #6 "x3 AA'A'' | x3 | x2"
+  % }
 
   \include "the-swallowtail.ily"
   \include "the-black-rogue.ily"

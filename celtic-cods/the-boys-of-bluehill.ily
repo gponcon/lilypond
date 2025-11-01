@@ -7,9 +7,9 @@
     opus = "Hornpipe | R | .'·'"
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { s1 b2:m d b:m a d a:7 d b:m b:m d b:m7 e:m d a:7 d a4:7 d }
+    \repeat volta 2 { s1 b:m d b:m a d a:7 d b:m b:m d b:m7 e:m d a:7 d a2:7 d }
     \break
-    \repeat volta 2 { s1 d g d2 a:7 d b:m b:m d b:m7 e:m d a:7 d a4:7 d }
+    \repeat volta 2 { s1 d d g g d a:7 d b:m b:m d b:m7 e:m d a:7 d a2:7 d }
   }
 }
 % \score {
