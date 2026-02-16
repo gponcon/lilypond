@@ -1,0 +1,14 @@
+\version "2.24.4"
+
+\indexItem #"The Ballydesmond" \markup { "Ballydesmond (The)" }
+\score {
+  \header {
+    piece = "The Ballydesmond"
+    opus = "Polka | ?"
+  }
+  \new ChordGrid \chordmode {
+    \repeat volta 4 { e2:m a:m e:m a:m g1 e:m e2:m a:m e:m a:m c g a1:m }
+    \break
+    \repeat volta 4 { a1:m c c g a:m c c2 g a1:m  }
+  }
+}

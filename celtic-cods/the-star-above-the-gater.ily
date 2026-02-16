@@ -1,9 +1,9 @@
 \version "2.24.4"
 
-\indexItem #"Star Above The Garter" \markup { "Star Above The Garter (The)" }
+\indexItem #"Star Above The Gater" \markup { "Star Above The Gater (The)" }
 \score {
   \header {
-    piece = "⚠ The Star Above The Garter"
+    piece = "⚠ The Star Above The Gater"
     opus = "Slide | R | .'·'.'·'"
   }
   \new ChordGrid \chordmode {
