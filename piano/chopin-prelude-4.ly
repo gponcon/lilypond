@@ -1,20 +1,10 @@
 \version "2.24.4"
-\paper {
-  #(set-paper-size "a4")
-  top-margin = 5\mm
-  bottom-margin = 8\mm
-  after-title-space = 5\mm
-  before-title-space = 0\mm
-  head-separation = 0\mm
-  left-margin = 8\mm
-  right-margin = 8\mm
-}
 
 \header {
   subtitle = "Prélude"
   composer = "Frédéric Chopin"
   opus = "Op. 28, No. 4"
-  enteredby = "Rev. M. Zajtmann, G. Ponçon, LilyPond"
+  enteredby = "Rev. 0.1, M. Zajtmann, G. Ponçon, LilyPond"
   tagline = ##f  % Supprime le message de bas de page
   copyright = \markup \fontsize #-2 {
     \column {
@@ -81,7 +71,7 @@ rightHand = \relative c' {
   e8-2\f dis-1 c'-5 dis,-1 dis-2 e g b,-1 |
   d!-4 c \tuplet 3/2 { e e, a_4 } fis4.-2-\markup { \italic "dim." } a8-4 |
   fis2.\p\) \acciaccatura b8-5 a4 |
-  fis2.^\(( fis8.)\< e16\! |
+  fis2.^\( fis8.~\< e16\! |
 
   % Mesures 21-25
   e2._2 fis4 |
