@@ -187,6 +187,10 @@
 
   \hr
 
+  \include "itzikel.ily"
+
+  \hr
+
   \include "alt-game-of-thrones.ily"
   \include "alt-pirate-caraibes.ily"
   \include "alt-tetris.ily"
