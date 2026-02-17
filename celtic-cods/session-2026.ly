@@ -188,6 +188,7 @@
   \hr
 
   \include "jessies-jig.ily"
+  \include "the-maid-meadow.ily"
   \include "trip-to-athlone.ily"
   \include "kerry-cow.ily"
   \include "ballydesmond.ily"
