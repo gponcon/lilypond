@@ -68,8 +68,8 @@ includeWithSuffix =
 
   %\hr
 
-  % home ruler x2
-  % Stack barley x2
+  \includeWithSuffix "home-ruler.ily" "x2"
+  \includeWithSuffix "stack-of-wheat.ily" "x2"
 
   \hr
 

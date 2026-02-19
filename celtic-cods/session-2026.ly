@@ -193,6 +193,8 @@
   \include "kerry-cow.ily"
   \include "ballydesmond.ily"
   \include "merrily.ily"
+  \include "home-ruler.ily"
+  \include "stack-of-wheat.ily"
 
   \hr
 

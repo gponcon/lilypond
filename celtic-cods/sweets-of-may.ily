@@ -5,7 +5,7 @@
   \header {
     piece = "Sweets of May"
     opus = \markup \concat {
-      "* | :':'"
+      "Jig | :':'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }

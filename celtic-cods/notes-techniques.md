@@ -13,3 +13,10 @@ perl -pi -e 's/opus = "(.*)"/opus = \\markup \\concat {\n      "$1"\n      #(let
 perl -pi -e 's/ \| RR* \|/ |/g' *.ily
 ```
 
+## Partitions manquantes
+
+- The Stack of Wheat
+- The drunken landlady
+- Swallow’s tail reel
+- Rolling on the rye grass
+- Dick Gossip
