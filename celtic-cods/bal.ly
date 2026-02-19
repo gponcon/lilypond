@@ -66,7 +66,7 @@ includeWithSuffix =
 
   \includeWithSuffix "john-ryans.ily" "x2,5 (AA’A’’) (Fin AB)"
 
-  %\hr
+  \hr
 
   \includeWithSuffix "home-ruler.ily" "x2"
   \includeWithSuffix "stack-of-wheat.ily" "x2"
@@ -78,12 +78,16 @@ includeWithSuffix =
   \includeWithSuffix "morrisons.ily" "x3"
   \includeWithSuffix "the-irish-washerwoman.ily" "x4"
 
-  % \hr
+  \hr
 
   % The drunken landlady x4 (AA’A’’)
   % Swallow’s tail reel x4
+
   % Rolling on the rye grass x4
+  \includeWithSuffix "rolling-in-ryegrass.ily" "x4"
+
   % Dick Gossip x4
+  \includeWithSuffix "dick-gossips-reel.ily" "x4"
 
   \hr
 
