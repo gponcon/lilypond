@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "⚠ The Star Above The Gater"
-    opus = "Slide | R | .'·'.'·'"
+    opus = \markup \concat {
+      "Slide | R | .'·'.'·'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { g2 d c2 g4 d g2 d c2 d }

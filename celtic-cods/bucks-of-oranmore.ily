@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Bucks Of Oranmore (the session #14)"
-    opus = "Reel | R | ._'·_'"
+    opus = \markup \concat {
+      "Reel | R | ._'·_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { d1 g d g d g b:m g }

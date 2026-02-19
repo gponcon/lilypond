@@ -5,7 +5,11 @@
 \score {
   \header {
     piece = "L'estropié"
-    opus = "Bourrée | R | <spec> / :_':'"
+    opus = \markup \concat {
+      "Bourrée | R | <spec> / :_':'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { \mark "x3" { e1:m d2 e:m } \textMark "mg ↓" c1 d2 e:m }

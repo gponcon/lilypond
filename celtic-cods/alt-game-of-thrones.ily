@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "Game of Thrones Theme (Ramin Djawadi)"
-    opus = "Epic"
+    opus = \markup \concat {
+      "Epic"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 {

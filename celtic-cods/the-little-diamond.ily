@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Little Diamond"
-    opus = "Polka | RR | .'·'"
+    opus = \markup \concat {
+      "Polka | RR | .'·'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { d1 d \altf { d a } { a d } }

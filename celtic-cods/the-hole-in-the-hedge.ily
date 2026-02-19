@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Hole In The Hedge"
-    opus = "Jig | R | ._'·_'"
+    opus = \markup \concat {
+      "Jig | R | ._'·_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { d1 d \altf { d a } { g \textMark ":_':_'" d2 a } }

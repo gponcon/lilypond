@@ -5,7 +5,11 @@
 % \score {
 %   \header {
 %     piece = "Humours of Bandon #1"
-%     opus = "Jig | R | ._'·_'"
+%     opus = \markup \concat {
+      "Jig | R | ._'·_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
 %     title = "CUI"
 %   }
 %   \new ChordGrid \chordmode {
@@ -20,7 +24,11 @@
 \score {
   \header {
     piece = "Humours of Bandon"
-    opus = "Jig | R | ._'·_'"
+    opus = \markup \concat {
+      "Jig | R | ._'·_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
     title = "CUI"
   }
   \new ChordGrid \chordmode {

@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "Denis Murphy's"
-    opus = "Slide | R | .'·'.'·'"
+    opus = \markup \concat {
+      "Slide | R | .'·'.'·'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { \textMark "^fa#" d1 g4 d a2 d1 d4 a4 d2 }

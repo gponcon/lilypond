@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "Tetris Theme (Korobeiniki)"
-    opus = "Folk"
+    opus = \markup \concat {
+      "Folk"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { \textMark "Intro" c2:m g c:m g c2:m g c:m g }

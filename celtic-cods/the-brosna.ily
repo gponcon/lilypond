@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Brosna"
-    opus = "Slide | R | .'·'.'·'"
+    opus = \markup \concat {
+      "Slide | R | .'·'.'·'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { g1 d g d2 g }

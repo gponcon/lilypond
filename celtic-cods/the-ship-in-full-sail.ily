@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Ships In Full Sail"
-    opus = "Jig | R | :':' / :'':''"
+    opus = \markup \concat {
+      "Jig | R | :':' / :'':''"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { \textMark "^sol :':'" \mark "x2" g1 c2 g \altf d1 { d2 g } }

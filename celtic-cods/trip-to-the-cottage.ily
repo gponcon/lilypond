@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "⚠ Trip To The Cottage"
-    opus = "Jig | R | :_':_'"
+    opus = \markup \concat {
+      "Jig | R | :_':_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { s1 \mark "1. 3x, 3. 4,5x (lignes 1 et 2)" { g \textMark "^fa# do ré" d:7 g2 d g d g1 d c2 d g1 } }

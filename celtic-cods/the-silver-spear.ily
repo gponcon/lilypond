@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Silver Spear"
-    opus = "Reel | R | ._'·_'"
+    opus = \markup \concat {
+      "Reel | R | ._'·_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { s1 \bar ".|:" d1 d \altf { d g } { g g } }

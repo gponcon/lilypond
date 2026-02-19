@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Maid in the Meadow"
-    opus = "Jig | ?"
+    opus = \markup \concat {
+      "Jig | ?"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { d2 a e:7 a a d d a e:7 a a d \altt { a2 e:7 } a1 }

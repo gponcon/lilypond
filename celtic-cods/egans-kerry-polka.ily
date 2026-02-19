@@ -5,7 +5,11 @@
 \score {
   \header {
     piece = "Egan's - The Kerry Polka"
-    opus = "Polka | R | .'·'"
+    opus = \markup \concat {
+      "Polka | R | .'·'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { d1 d d \altf a g }

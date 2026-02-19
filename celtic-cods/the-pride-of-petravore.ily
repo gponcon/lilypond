@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Pride Of Petravore"
-    opus = "Hornpipe | R | ._'·_'"
+    opus = \markup \concat {
+      "Hornpipe | R | ._'·_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { e1:m e:m \altf { d d } { b:m e:m } }

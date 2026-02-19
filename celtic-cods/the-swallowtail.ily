@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Swallowtail"
-    opus = "Jig | R | .'·'"
+    opus = \markup \concat {
+      "Jig | R | .'·'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { s1 \bar ".|:" \textMark "^mi" e:m e:m d \altf d e:m }

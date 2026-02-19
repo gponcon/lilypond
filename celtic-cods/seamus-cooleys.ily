@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "Seamus Cooley's"
-    opus = "Jig | R | ._'·_'"
+    opus = \markup \concat {
+      "Jig | R | ._'·_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { s1 \bar ".|:" \textMark "^mi" a a \textMark "^ré" d \textMark "^mi" e a a \textMark "||" d2 e \textMark "| ^do# 𝄐" a1 }

@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "⚠ Merrily Kissed The Quaker's Wife"
-    opus = "Slide / Jig | R | ._'·_'._'·_' ?"
+    opus = \markup \concat {
+      "Slide / Jig | R | ._'·_'._'·_' ?"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { g1 c2 e:m g1 d g c2 e:m g d g1 }

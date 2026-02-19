@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "⚠ Dusty Windowsills"
-    opus = "Jig | R | ._'·_' / :_':_'"
+    opus = \markup \concat {
+      "Jig | R | ._'·_' / :_':_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { \textMark "._'·_'" a1:m a:m \altf { g g } { c g2 a:m } }

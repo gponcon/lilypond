@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Irish Washerwoman"
-    opus = "Jig | R | ._'·_'"
+    opus = \markup \concat {
+      "Jig | R | ._'·_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { \textMark "^ré" g1 g \altf { a:m a:m } { \textMark "^ré fa# la do" d:7 g } }

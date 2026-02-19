@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "Pirate des Caraïbes (Zimmer)"
-    opus = "Epic"
+    opus = \markup \concat {
+      "Epic"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     s1 f:m ees f:m ees f:m c f:m f:m f:m ees f:m des f:m bes:m f:m c

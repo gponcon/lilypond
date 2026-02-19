@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "L'air mignonne (the session #5)"
-    opus = "Barndance | R | :_':_'"
+    opus = \markup \concat {
+      "Barndance | R | :_':_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2  { s1 \bar ".|:" g2 d g d c g \altt { g d }  { d g } }

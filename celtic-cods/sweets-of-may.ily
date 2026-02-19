@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "Sweets of May"
-    opus = "* | R | :':'"
+    opus = \markup \concat {
+      "* | R | :':'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { s2 d2 \bar ".|:" g d g1 \textMark "^mi" e:m \textMark "^ré" d:7 g2 d g1 \textMark "^mi" e2:m d \altt { g2 d } g1 }

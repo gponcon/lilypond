@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "Killoran's Church (V. simple, à vérifier)"
-    opus = "Hornpipe | R | ?"
+    opus = \markup \concat {
+      "Hornpipe | R | ?"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { g1 d e:m c g d }
@@ -14,7 +18,11 @@
 \score {
   \header {
     piece = "Killoran's Church (V. retranscrite, à vérifier)"
-    opus = "Hornpipe | R | ?"
+    opus = \markup \concat {
+      "Hornpipe | R | ?"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { s1 g d g c g \altf { g d d } { d g } }

@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "Going To The Well For The Water"
-    opus = "Slide | R | ._'·_'._'·_'"
+    opus = \markup \concat {
+      "Slide | R | ._'·_'._'·_'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { d1 g a \textMark "|||" g2 a4 d }

@@ -4,7 +4,11 @@
 \score {
   \header {
     piece = "The Britches Full Of Stitches"
-    opus = "Polka | R | .'·'"
+    opus = \markup \concat {
+      "Polka | R | .'·'"
+      #(let ((s (ly:parser-lookup 'currentSuffix)))
+        (if (markup? s) (markup #:concat (" | " s)) ""))
+    }
   }
   \new ChordGrid \chordmode {
     \tweak text "A + B" \startMeasureSpanner
