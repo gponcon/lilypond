@@ -6,11 +6,10 @@
 %   \header {
 %     piece = "Humours of Bandon #1"
 %     opus = \markup \concat {
-      "Jig | R | ._'·_'"
-      #(let ((s (ly:parser-lookup 'currentSuffix)))
-        (if (markup? s) (markup #:concat (" | " s)) ""))
-    }
-%     title = "CUI"
+%      "Jig | ._'·_'"
+%      #(let ((s (ly:parser-lookup 'currentSuffix)))
+%        (if (markup? s) (markup #:concat (" | " s)) ""))
+%    }
 %   }
 %   \new ChordGrid \chordmode {
 %     \repeat volta 4 {
@@ -25,11 +24,10 @@
   \header {
     piece = "Humours of Bandon"
     opus = \markup \concat {
-      "Jig | R | ._'·_'"
+      "Jig | ._'·_'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }
-    title = "CUI"
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 {

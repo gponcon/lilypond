@@ -5,7 +5,7 @@
   \header {
     piece = "Killoran's Church (V. simple, à vérifier)"
     opus = \markup \concat {
-      "Hornpipe | R | ?"
+      "Hornpipe | ?"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }
@@ -19,7 +19,7 @@
   \header {
     piece = "Killoran's Church (V. retranscrite, à vérifier)"
     opus = \markup \concat {
-      "Hornpipe | R | ?"
+      "Hornpipe | ?"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }

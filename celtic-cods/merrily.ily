@@ -5,7 +5,7 @@
   \header {
     piece = "⚠ Merrily Kissed The Quaker's Wife"
     opus = \markup \concat {
-      "Slide / Jig | R | ._'·_'._'·_' ?"
+      "Slide / Jig | ._'·_'._'·_' ?"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }

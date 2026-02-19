@@ -5,7 +5,7 @@
   \header {
     piece = "Denis Murphy's"
     opus = \markup \concat {
-      "Polka | R | :':'"
+      "Polka | :':'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }

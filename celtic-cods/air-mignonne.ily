@@ -5,7 +5,7 @@
   \header {
     piece = "L'air mignonne (the session #5)"
     opus = \markup \concat {
-      "Barndance | R | :_':_'"
+      "Barndance | :_':_'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }

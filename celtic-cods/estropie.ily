@@ -6,7 +6,7 @@
   \header {
     piece = "L'estropié"
     opus = \markup \concat {
-      "Bourrée | R | <spec> / :_':'"
+      "Bourrée | <spec> / :_':'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }

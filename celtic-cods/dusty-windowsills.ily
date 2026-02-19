@@ -5,7 +5,7 @@
   \header {
     piece = "⚠ Dusty Windowsills"
     opus = \markup \concat {
-      "Jig | R | ._'·_' / :_':_'"
+      "Jig | ._'·_' / :_':_'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }

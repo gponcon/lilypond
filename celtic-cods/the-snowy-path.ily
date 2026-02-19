@@ -5,7 +5,7 @@
   \header {
     piece = "The Snowy Path"
     opus = \markup \concat {
-      "Slip Jig | R | :_':_':_'"
+      "Slip Jig | :_':_':_'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }
@@ -19,10 +19,10 @@
 %  \header {
 %    piece = "The Snowy Path (alt 2 - the sessions)"
 %    opus = \markup \concat {
-      "Slip Jig | R | .'·' ?"
-      #(let ((s (ly:parser-lookup 'currentSuffix)))
-        (if (markup? s) (markup #:concat (" | " s)) ""))
-    }
+%      "Slip Jig | .'·' ?"
+%      #(let ((s (ly:parser-lookup 'currentSuffix)))
+%        (if (markup? s) (markup #:concat (" | " s)) ""))
+%    }
 %  }
 %  \new ChordGrid \chordmode {
 %    \repeat volta 2 { d1 g d e:m }

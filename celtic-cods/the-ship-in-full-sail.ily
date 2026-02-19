@@ -5,7 +5,7 @@
   \header {
     piece = "The Ships In Full Sail"
     opus = \markup \concat {
-      "Jig | R | :':' / :'':''"
+      "Jig | :':' / :'':''"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }

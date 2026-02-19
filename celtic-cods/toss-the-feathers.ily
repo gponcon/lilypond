@@ -5,7 +5,7 @@
   \header {
     piece = "⚠ Toss The Feathers"
     opus = \markup \concat {
-      "Reel | R | :':'"
+      "Reel | :':'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }
