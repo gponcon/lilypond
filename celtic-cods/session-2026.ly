@@ -192,6 +192,7 @@
   \include "trip-to-athlone.ily"
   \include "kerry-cow.ily"
   \include "ballydesmond.ily"
+  \include "merrily.ily"
 
   \hr
 
