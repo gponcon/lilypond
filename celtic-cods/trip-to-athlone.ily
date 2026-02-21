@@ -5,13 +5,13 @@
   \header {
     piece = "The Trip To Athlone"
     opus = \markup \concat {
-      "Jig | ?"
+      "Jig | :_':_'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }
   }
   \new ChordGrid \chordmode {
-    \repeat volta 4 { d1 c d \altf a d }
-    \repeat volta 2 { d1 a d a2 d c1 g d2 a d1 }
+    \repeat volta 4 { \textMark "^ré" d1 \textMark "^do" c d \altf a d }
+    \repeat volta 2 { d1 a d a2 d \textMark "gb" c1 g d2 a d1 }
   }
 }

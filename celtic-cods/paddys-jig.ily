@@ -11,7 +11,7 @@
     }
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { \mark "x3" { \textMark "^si" e1:m d } d \textMark "^sol" e:m }
+    \repeat volta 2 { \mark "x3" { \textMark "^mi" e1:m d } d \textMark "^sol" e:m }
     \repeat volta 2 { \mark "x3" { \textMark "^si" e1:m d } g \textMark "^sol" e:m }
   }
 }

@@ -11,8 +11,8 @@
     }
   }
   \new ChordGrid \chordmode {
-    \repeat volta 4 { e2:m a:m e:m a:m g1 e:m e2:m a:m e:m a:m c g a1:m }
+    \repeat volta 4 { a1:m a:m g e:m a:m a:m c2 g a1:m }
     \break
-    \repeat volta 4 { a1:m c c g a:m c c2 g a1:m  }
+    \repeat volta 4 { a1:m c c g a1:m c c2 g a1:m  }
   }
 }

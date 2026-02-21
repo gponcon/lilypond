@@ -142,7 +142,8 @@ includeWithSuffix =
   \hr
 
   \includeWithSuffix "the-otters-holt.ily" "x3 (AA'A'')"
-  \includeWithSuffix "toss-the-feathers.ily" "x2,5 (fin AB)"
+  \includeWithSuffix "macleods-farewell.ily" "x2 (AA’A’’)"
+  % \includeWithSuffix "toss-the-feathers.ily" "x2,5 (fin AB)"
 
   \hr
 
@@ -152,8 +153,8 @@ includeWithSuffix =
   \hr
 
   \includeWithSuffix "haste-to-the-wedding.ily" "(1) - (1)-(2)-(3) x2 (1AA’A’’) (fin 1AA’)"
-  \includeWithSuffix "the-german-beau.ily" "(2)"
-  \includeWithSuffix "leslies.ily" "(3)"
+  \includeWithSuffix "leslies.ily" "(2)"
+  \includeWithSuffix "the-german-beau.ily" "(3)"
 
   \hr
 
@@ -177,6 +178,6 @@ includeWithSuffix =
 
   \hr
 
-  \includeWithSuffix "macleods-farewell.ily" "x2 (AA’A’’)"
+  % \includeWithSuffix "macleods-farewell.ily" "x2 (AA’A’’)"
   \includeWithSuffix "saint-anne.ily" "x2 (fin BB’B’’)"
 }

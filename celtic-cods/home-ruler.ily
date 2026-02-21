@@ -3,9 +3,9 @@
 \indexItem #"Home Ruler" \markup { "Home Ruler (The)" }
 \score {
   \header {
-    piece = "⚠ The Home Ruler"
+    piece = "The Home Ruler"
     opus = \markup \concat {
-      "Hornpipe | ?"
+      "Hornpipe | :_':_'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }
