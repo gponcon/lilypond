@@ -1,17 +1,17 @@
 \version "2.24.4"
 
-\indexItem #"The Trip To Athlone" \markup { "Trip To Athlone (The)" }
+\indexItem #"The Swallow's Tail Reel" \markup { "Swallow's Tail Reel (The)" }
 \score {
   \header {
-    piece = "The Trip To Athlone"
+    piece = "⚠ The Swallow's Tail Reel"
     opus = \markup \concat {
-      "Jig | ?"
+      "Reel | ?"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }
   }
   \new ChordGrid \chordmode {
-    \repeat volta 4 { d1 c d \altf a d }
-    \repeat volta 2 { d1 a d a2 d c1 g d2 a d1 }
+    \repeat volta 2 { }
+    \repeat volta 2 { }
   }
 }

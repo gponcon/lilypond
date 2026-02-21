@@ -6,8 +6,8 @@ includeWithSuffix =
    (ly:parser-include-string (format #f "\\include \"~a\"" file))
    (make-music 'SequentialMusic 'void #t))
 
-\includeWithSuffix "toc-init-index.ily" "x"
-\includeWithSuffix "global-params.ily" "x"
+\include "toc-init-index.ily"
+\include "global-params.ily"
 
 \book {
   \paper {
@@ -81,7 +81,10 @@ includeWithSuffix =
   \hr
 
   % The drunken landlady x4 (AA’A’’)
+  % \includeWithSuffix "drunken-landlady.ily" "x4 (AA’A’’)"
+
   % Swallow’s tail reel x4
+  % \includeWithSuffix "the-swallows-tail-reel.ily" "x4"
 
   % Rolling on the rye grass x4
   \includeWithSuffix "rolling-in-ryegrass.ily" "x4"
