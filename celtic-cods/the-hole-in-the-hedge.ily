@@ -12,6 +12,6 @@
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { d1 d \altf { d a } { g \textMark ":_':_'" d2 a } }
-    \repeat volta 4 { d1 b:m g \textMark ":_':_'" d2 a }
+    \repeat volta 4 { \tweak text "x4" \startMeasureSpanner d1 b:m g \textMark ":_':_'" d2 a \stopMeasureSpanner }
   }
 }

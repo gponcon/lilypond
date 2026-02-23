@@ -3,7 +3,7 @@
 \indexItem #"Killoran's Church" \markup { "Killoran's Church" }
 \score {
   \header {
-    piece = "Killoran's Church (V. simple, à vérifier)"
+    piece = "⚠ Killoran's Church (V. simple)"
     opus = \markup \concat {
       "Hornpipe | ?"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
@@ -17,7 +17,7 @@
 }
 \score {
   \header {
-    piece = "Killoran's Church (V. retranscrite, à vérifier)"
+    piece = "⚠ Killoran's Church (V. retranscrite)"
     opus = \markup \concat {
       "Hornpipe | ?"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
