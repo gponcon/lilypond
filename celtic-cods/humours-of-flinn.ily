@@ -4,7 +4,7 @@
 \indexItem #"Humours of Flinn" \markup { "Humours of Flinn (The)" }
 \score {
   \header {
-    piece = "The Humours Of Flinn (à vérifier)"
+    piece = "The Humours Of Flinn"
     opus = \markup \concat {
       "Valse | :''"
       #(let ((s (ly:parser-lookup 'currentSuffix)))

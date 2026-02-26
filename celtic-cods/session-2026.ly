@@ -195,6 +195,9 @@
   \include "merrily.ily"
   \include "home-ruler.ily"
   \include "stack-of-wheat.ily"
+  \include "dick-gossips-reel.ily"
+  % \includeWithSuffix "drunken-landlady.ily" "x4 (AA’A’’)"
+  % \includeWithSuffix "the-swallows-tail-reel.ily" "x4"
 
   \hr
 

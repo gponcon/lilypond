@@ -36,7 +36,7 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
   system-system-spacing.basic-distance = #0
   score-markup-spacing = #'((basic-distance . 6)
                             (minimum-distance . 4)
-                            (padding . 4)
+                            (padding . 5)
                             (stretchability . 20))
   markup-system-spacing = #'((basic-distance . 4)
                             (minimum-distance . 2)
@@ -64,9 +64,5 @@ altf = #(define-music-function (alt1 alt2) (ly:music? ly:music?)
     \ChordGrid
     \override GridChordName.font-size = #4
     \consists Measure_spanner_engraver
-  }
-  \context {
-    \Voice
-    \override TextMark.font-size = 20
   }
 }

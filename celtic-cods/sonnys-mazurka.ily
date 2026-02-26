@@ -11,7 +11,7 @@
     }
   }
   \new ChordGrid \chordmode {
-    \repeat volta 4 { d1 d g \textMark "|||" a2 g4 a d1 d g2. a4 d1 }
-    \repeat volta 4 { d1 a g \textMark "|||" a2 g4 a d1 a g2. a4 d1 }
+    \repeat volta 2 { d1 d g \textMark "|||" a2 g4 a d1 d g2. a4 d1 }
+    \repeat volta 2 { d1 a g \textMark "|||" a2 g4 a d1 a g2. a4 d1 }
   }
 }
