@@ -80,16 +80,9 @@ includeWithSuffix =
 
   \hr
 
-  % The drunken landlady x4 (AA’A’’)
   \includeWithSuffix "drunken-landlady.ily" "x4 (AA’A’’)"
-
-  % Swallow’s tail reel x4
   \includeWithSuffix "the-swallows-tail-reel.ily" "x4"
-
-  % Rolling on the rye grass x4
   \includeWithSuffix "rolling-in-ryegrass.ily" "x4"
-
-  % Dick Gossip x4
   \includeWithSuffix "dick-gossips-reel.ily" "x4"
 
   \hr
