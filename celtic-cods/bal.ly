@@ -81,10 +81,10 @@ includeWithSuffix =
   \hr
 
   % The drunken landlady x4 (AA’A’’)
-  % \includeWithSuffix "drunken-landlady.ily" "x4 (AA’A’’)"
+  \includeWithSuffix "drunken-landlady.ily" "x4 (AA’A’’)"
 
   % Swallow’s tail reel x4
-  % \includeWithSuffix "the-swallows-tail-reel.ily" "x4"
+  \includeWithSuffix "the-swallows-tail-reel.ily" "x4"
 
   % Rolling on the rye grass x4
   \includeWithSuffix "rolling-in-ryegrass.ily" "x4"
@@ -179,5 +179,5 @@ includeWithSuffix =
   \hr
 
   % \includeWithSuffix "macleods-farewell.ily" "x2 (AA’A’’)"
-  \includeWithSuffix "saint-anne.ily" "x2 (fin BB’B’’)"
+  \includeWithSuffix "saint-anne.ily" "x2 (AA'A'') (fin BB’B’’)"
 }
