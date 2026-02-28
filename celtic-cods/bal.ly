@@ -79,6 +79,7 @@ includeWithSuffix =
   \includeWithSuffix "the-irish-washerwoman.ily" "x4"
 
   \hr
+  \pageBreak
 
   \includeWithSuffix "drunken-landlady.ily" "x4 (AA’A’’)"
   \includeWithSuffix "the-swallows-tail-reel.ily" "x4"
