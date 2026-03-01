@@ -18,7 +18,8 @@ respire = \markup {
 
 \header {
   subtitle = "Pirate des Caraibes"
-  composer = "Klaus Badelt, Hans Zimmer, arrangement Guillaume Ponçon"
+  composer = "Klaus Badelt, Hans Zimmer"
+  opus = "Arrangement Guillaume Ponçon"
   enteredby = "Guillaume Ponçon"
   tagline = ##f  % Supprime le message de bas de page
   copyright = \markup \fontsize #-2 {
