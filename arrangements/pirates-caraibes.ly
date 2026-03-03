@@ -18,8 +18,7 @@ respire = \markup {
 
 \header {
   subtitle = "Pirate des Caraibes"
-  composer = "Klaus Badelt, Hans Zimmer"
-  opus = "Arrangement Guillaume Ponçon"
+  composer = "Klaus Badelt, Hans Zimmer, arrangement Guillaume Ponçon"
   enteredby = "Guillaume Ponçon"
   tagline = ##f  % Supprime le message de bas de page
   copyright = \markup \fontsize #-2 {
@@ -38,9 +37,9 @@ respire = \markup {
 }
 
 global = {
-  \key gis \major
-  \time 4/4
-  \tempo "120"
+  \key aes \major
+  \time 3/4
+  \tempo "80"
   \set fingeringOrientations = #'(left) % ou "left up"
   \set Staff.pedalUnaCordaStrings = #'("U.C." "ad lib." "T.C.")
   \set Staff.pedalSustainStrings = #'("P." " " "*")
@@ -51,19 +50,23 @@ rightHand = \relative c' {
   \global
   \clef treble
 
-  \partial 4
-  f8 g g4.:es a16:es c8 a:es g:es g g:es a:es d a4:es
+  \partial 4.  f8 g4
+  aes4. bes8 c4
+  bes aes g
+  aes bes c
+  bes2 aes8 bes2
+  c4. bes2
 }
 
 leftHand = \fixed c {
   \global
   \clef bass
-  \partial 4
-  r8. r16\sustainOn |
-  <g-4 b e'>8\( q q q q q q\sustainOn q |
-  <fis-5 a e'>8\sustainOn q q q <fis a ees'>8 q q\sustainOn q |
-  <f a ees'>8\sustainOn q q q <f a d'>8\sustainOn q <f gis d'>8\sustainOn q |
-  <e gis d'>8\sustainOn q q q <e g d'>8\sustainOn q <e g cis'>8\sustainOn q |
+%   \partial 4
+%   r8. r16\sustainOn |
+%   <g-4 b e'>8\( q q q q q q\sustainOn q |
+%   <fis-5 a e'>8\sustainOn q q q <fis a ees'>8 q q\sustainOn q |
+%   <f a ees'>8\sustainOn q q q <f a d'>8\sustainOn q <f gis d'>8\sustainOn q |
+%   <e gis d'>8\sustainOn q q q <e g d'>8\sustainOn q <e g cis'>8\sustainOn q |
 }
 
 \score {
