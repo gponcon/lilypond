@@ -11,7 +11,7 @@
     }
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { d2 a e:7 a a d d a e:7 a a d \altt { a2 e:7 } a1 }
+    \repeat volta 2 { d2 a e:7 a a d a e d a e:7 a a d a1 }
     \repeat volta 2 { \mark "x3" { a1 d2 a } a d e:7 a }
   }
 }

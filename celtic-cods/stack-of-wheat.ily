@@ -13,6 +13,6 @@
   \new ChordGrid \chordmode {
     \repeat volta 2 { s1 g d2 e:m g1 g2 e:m g1 a2:m g g e:m d g }
     \break
-    \repeat volta 2 { e1:m e:m g g2 e:m \altt { e1:m e:m g d2 g } { g1 a2:m g g1 d2 g } }
+    \repeat volta 2 { e1:m e:m g g2 e:m \altt { e1:m e:m g d2 g } { g1 a2:m g g e:m d2 g } }
   }
 }

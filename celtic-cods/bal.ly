@@ -82,9 +82,9 @@ includeWithSuffix =
   \pageBreak
 
   \includeWithSuffix "drunken-landlady.ily" "x4 (AA’A’’)"
-  \includeWithSuffix "the-swallows-tail-reel.ily" "x4"
+  \includeWithSuffix "the-swallows-tail-reel.ily" "x3"
   \includeWithSuffix "rolling-in-ryegrass.ily" "x4"
-  \includeWithSuffix "dick-gossips-reel.ily" "x4"
+  \includeWithSuffix "dick-gossips-reel.ily" "x3"
 
   \hr
 
