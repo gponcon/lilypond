@@ -12,9 +12,6 @@
   }
   \new ChordGrid \chordmode {
     \repeat volta 2 { d1 g d \altt { g2 a } { g2 a4 d } }
-    \repeat volta 2 { d1 g2 a d1 d2 a } % \altt { a2 g } { g2 a } }
-    %\break
-    %\repeat volta 2 { d1 g d a }
-    %\repeat volta 2 { d1 g2 d d1 \altt { d2 a } { a2. d4 } }
+    \repeat volta 2 { d1 g2 a d1 d2 a }
   }
 }
