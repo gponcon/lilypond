@@ -12,6 +12,6 @@
   }
   \new ChordGrid \chordmode {
     \repeat volta 4 { s1 \bar ".|:" e1:m \textMark "^sol" a2:m e:m \altf { c2 g a:m d } { a2:m d e1:m } }
-    \repeat volta 2 { \textMark "^mi" \mark "x2" e1:m d b:m c a:m a2:m d e1:m }
+    \repeat volta 2 { \mark "x2" e1:m d b:m c a:m a2:m d e1:m }
   }
 }

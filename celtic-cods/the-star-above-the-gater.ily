@@ -5,7 +5,7 @@
   \header {
     piece = "⚠ The Star Above The Gater"
     opus = \markup \concat {
-      "Slide | .'·'.'·'"
+      "Slide | :':'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }

@@ -3,15 +3,15 @@
 \indexItem #"The Maid in the Meadow" \markup { "Maid in the Meadow (The)" }
 \score {
   \header {
-    piece = "The Maid in the Meadow"
+    piece = "⚠⚠ The Maid in the Meadow"
     opus = \markup \concat {
-      "Jig | ?"
+      "Jig | :':'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
         (if (markup? s) (markup #:concat (" | " s)) ""))
     }
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { d2 a \textMark "alt: E" e:7 a a d a e d a \textMark "alt: E" e:7 a a d a1 }
+    \repeat volta 2 { \textMark "^ré" d2 a \textMark "alt: E" e:7 a a d a e d a \textMark "alt: E" e:7 a a d a1 }
     \repeat volta 2 { \mark "x3" { a1 d2 a } a d e:7 a }
   }
 }

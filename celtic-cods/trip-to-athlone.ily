@@ -3,7 +3,7 @@
 \indexItem #"The Trip To Athlone" \markup { "Trip To Athlone (The)" }
 \score {
   \header {
-    piece = "The Trip To Athlone"
+    piece = "⚠ The Trip To Athlone"
     opus = \markup \concat {
       "Jig | :_':_'"
       #(let ((s (ly:parser-lookup 'currentSuffix)))
