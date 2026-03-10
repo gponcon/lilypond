@@ -12,9 +12,9 @@
     }
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { d2 c4 d g2 d g c4 d g2 d4 g }
-    \repeat volta 2 { \mark "x4" { g4 d g d g2 d } }
-    \repeat volta 2 { g2 d4 g g2 d g4 d c d g2 d4 g }
+    \repeat volta 2 { g2 f4 g c2 g c f4 g c2 g4 c }
+    \repeat volta 2 { \mark "x4" { c4 g c g c2 g } }
+    \repeat volta 2 { c2 g4 c c2 g c4 g f g c2 g4 c }
   }
 }
 
