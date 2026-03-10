@@ -11,8 +11,8 @@
     }
   }
   \new ChordGrid \chordmode {
-    \repeat volta 2 { \textMark "^mi" e2:m b e:m b d1 d2 b e:m b e1:m d1 b2 e:m  }
+    \repeat volta 2 { \textMark "^mi" e2:m b:m e:m b:m d1 d2 b:m e:m b:m e1:m d1 b2:m e:m  }
     \break
-    \repeat volta 4 { e1:m g d \altf b { b2 e:m } }
+    \repeat volta 4 { e1:m g d \altf { d2 b:m } { b2:m e:m } }
   }
 }
